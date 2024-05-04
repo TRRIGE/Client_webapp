@@ -20,6 +20,34 @@ body {
   font-weight: 600;
 }
 
+#navButtonConnect {
+  border-radius: 25px;
+  border: 2px solid #6e07f3;
+  color: #6e07f3;
+  padding: 7px 25px 7px 25px;
+  font-size: 20px;
+}
+
+#navButtonConnect:hover {
+  background-color: #6e07f3;
+  color: white;
+  font-weight: 600;
+}
+
+#navButtonFooter {
+  border-radius: 45px;
+  border: 2px solid #56dbb1;
+  color: white;
+  padding: 5px 25px 5px 25px;
+  font-size: 20px;
+}
+
+#navButtonFooter:hover {
+  background-color: #56dbb1;
+  color: black;
+  font-weight: 600;
+}
+
 #heroTitle {
   font-size: 48px;
   font-weight: 600;
@@ -41,8 +69,21 @@ body {
   font-weight: 100;
 }
 
+#marginTopOuter {
+  margin-top: 125px;
+  margin-bottom: 125px;
+}
+
 .half-height-background {
   background: linear-gradient(to bottom, #6e07f3 155px, #ffffff 155px);
+}
+
+.half-height-backgroundforWork {
+  background: linear-gradient(to bottom, #6e07f3 355px, #ffffff 355px);
+}
+
+.half-height-backgroundforFooter {
+  background: linear-gradient(to bottom, #ffffff 65px, #6e07f3 65px);
 }
 
 #projectBtn {
@@ -50,4 +91,22 @@ body {
   padding: 7px 13px 7px 13px;
   border-radius: 5px;
   color: blue;
+}
+
+::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #56dbb1;
+  border-radius: 5px;
+}
+
+#footerMargin {
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
