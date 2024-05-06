@@ -4,7 +4,7 @@ const Work = () => {
   return (
     <div className="half-height-backgroundforWork" id="marginTopOuter">
       <div className="container-fluid">
-        <div className="row">
+        <div className="row" id="work">
           <div className="col text-center mb-5 text-white" id="marginTop">
             <h2>My Recent Work</h2>
             <p>
