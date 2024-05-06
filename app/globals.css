@@ -74,12 +74,17 @@ body {
   margin-bottom: 125px;
 }
 
+#experienceCard {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 .half-height-background {
   background: linear-gradient(to bottom, #6e07f3 155px, #ffffff 155px);
 }
 
 .half-height-backgroundforWork {
-  background: linear-gradient(to bottom, #6e07f3 355px, #ffffff 355px);
+  background: linear-gradient(to bottom, #6e07f3 450px, #ffffff 450px);
 }
 
 .half-height-backgroundforFooter {
@@ -94,7 +99,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 7.5px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -102,11 +107,133 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #56dbb1;
-  border-radius: 5px;
+  background-color: #141c3a;
+  border-radius: 2px;
 }
 
 #footerMargin {
   margin-top: 100px;
   margin-bottom: 30px;
+}
+
+#footerBlackcontent {
+  border-radius: 15px;
+  background-color: #141c3a;
+  padding: 40px 120px 40px 120px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#workCard {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 15px;
+}
+
+#social li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.linkedin .borderlinkedin {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.linkedin .borderlinkedin:hover {
+  background-color: white;
+  color: #6e07f3;
+}
+
+.bi.bi-linkedin {
+  font-size: 22px;
+}
+
+.facebook .borderFacebook {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.facebook .borderFacebook:hover {
+  background-color: white;
+  color: #6e07f3;
+}
+
+.bi.bi-facebook {
+  font-size: 22px;
+}
+
+.twitter .borderTwitter {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.twitter .borderTwitter:hover {
+  background-color: white;
+  color: #6e07f3;
+}
+
+.bi.bi-twitter {
+  font-size: 22px;
+}
+
+.instagram .borderInsta {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.instagram .borderInsta:hover {
+  background-color: white;
+  color: #6e07f3;
+}
+
+.bi.bi-instagram {
+  font-size: 22px;
+}
+
+.dribbble .borderDribble {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dribbble .borderDribble:hover {
+  background-color: white;
+  color: #6e07f3;
+}
+
+.bi.bi-dribbble {
+  font-size: 22px;
 }

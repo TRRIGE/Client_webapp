@@ -6,17 +6,10 @@ const Footer = () => {
       <div className="container-fluid">
         <div className="row ms-3 me-3">
           <div className="col">
-            <div
-              className="card"
-              style={{
-                borderRadius: "15px",
-                backgroundColor: "#141c3a",
-                padding: "40px 120px 40px 120px",
-              }}
-            >
+            <div className="card" id="footerBlackcontent">
               <div className="card-body text-white d-flex justify-content-between">
                 <h3 className="">Start a Project</h3>
-                <h6 className="">
+                <h6>
                   Interested in working together? We should <br />
                   queue up a time to chat. I’ll buy the coffee.
                 </h6>
@@ -29,67 +22,48 @@ const Footer = () => {
         </div>
         <div className="row">
           <div className="col text-center text-white" id="footerMargin">
-            <h3>
+            <h4>
               Living, learning, & leveling up <br />
               one day at a time.
-            </h3>
+            </h4>
             <div className="mb-5 mt-5">
-              <a
-                data-mdb-ripple-init
-                class="btn text-white btn-floating m-1"
-                style={{ backgroundColor: "#3b5998" }}
-                href="#!"
-                role="button"
-              >
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a
-                data-mdb-ripple-init
-                class="btn text-white btn-floating m-1"
-                style={{ backgroundColor: "#55acee" }}
-                href="#!"
-                role="button"
-              >
-                <i class="bi bi-twitter"></i>
-              </a>
-              <a
-                data-mdb-ripple-init
-                class="btn text-white btn-floating m-1"
-                style={{ backgroundColor: "#dd4b39" }}
-                href="#!"
-                role="button"
-              >
-                <i class="bi bi-google"></i>
-              </a>
-              <a
-                data-mdb-ripple-init
-                class="btn text-white btn-floating m-1"
-                style={{ backgroundColor: "#ac2bac" }}
-                href="#!"
-                role="button"
-              >
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a
-                data-mdb-ripple-init
-                class="btn text-white btn-floating m-1"
-                style={{ backgroundColor: "#0082ca" }}
-                href="#!"
-                role="button"
-              >
-                <i class="bi bi-linkedin"></i>
-              </a>
-              <a
-                data-mdb-ripple-init
-                class="btn text-white btn-floating m-1"
-                style={{ backgroundColor: "#333333" }}
-                href="#!"
-                role="button"
-              >
-                <i class="bi bi-github"></i>
-              </a>
+              <div className="center">
+                <div id="social">
+                  <ul>
+                    <li className="linkedin me-3">
+                      <button className="borderlinkedin">
+                        <i className="bi bi-linkedin"></i>
+                      </button>
+                    </li>
+
+                    <li className="facebook me-3">
+                      <button className="borderFacebook">
+                        <i className="bi bi-facebook"></i>
+                      </button>
+                    </li>
+
+                    <li className="twitter me-3">
+                      <button className="borderTwitter">
+                        <i className="bi bi-twitter"></i>
+                      </button>
+                    </li>
+
+                    <li className="instagram me-3">
+                      <button className="borderInsta">
+                        <i className="bi bi-instagram"></i>
+                      </button>
+                    </li>
+
+                    <li className="dribbble me-3">
+                      <button className="borderDribble">
+                        <i className="bi bi-dribbble"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <p className="lead">
+            <p>
               © Copyright {new Date().getFullYear()} - Designed and built by
               Rutuja Kothekar.
             </p>

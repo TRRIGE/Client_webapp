@@ -10,11 +10,8 @@ const Experience = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-6">
-          <div
-            className="card p-3"
-            style={{ borderRadius: "15px", backgroundColor: "#56dbb1" }}
-          >
+        <div className="col">
+          <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
                 <h5 className="card-title mb-2">
@@ -29,7 +26,9 @@ const Experience = () => {
                   <i className="bi bi-box-arrow-up-right"></i>
                 </a>
               </div>
-              <h6 className="mb-3">Software and Business Development</h6>
+              <h6 className="mb-3" style={{ color: "#6e07f3" }}>
+                Software and Business Development
+              </h6>
               <p className="card-text">
                 My primary responsibility entailed meticulously tailoring
                 projects to precisely meet client needs, ensuring excellence in
@@ -44,10 +43,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="col-lg-6">
-          <div
-            className="card p-3"
-            style={{ borderRadius: "15px", backgroundColor: "#56dbb1" }}
-          >
+          <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
                 <h5 className="card-title mb-2">LiveTechSkils</h5>
@@ -60,7 +56,9 @@ const Experience = () => {
                   <i className="bi bi-box-arrow-up-right"></i>
                 </a>
               </div>
-              <h6 className="mb-3">Full Stack Development</h6>
+              <h6 className="mb-3" style={{ color: "#6e07f3" }}>
+                Full Stack Development
+              </h6>
               <p className="card-text">
                 Driven by a passion for crafting seamless user experiences, I
                 excel in front-end finesse, ensuring every pixel aligns with
