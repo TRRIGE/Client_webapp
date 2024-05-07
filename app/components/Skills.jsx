@@ -5,14 +5,17 @@ const Skills = () => {
     <div className="half-height-background" id="skills">
       <div className="container-fluid">
         <div className="row ms-3 me-3">
-          <div className="card-group text-center no-margin-on-mobile">
+          <div
+            className="card-group text-center no-margin-on-mobile"
+            style={{ lineHeight: "30px" }}
+          >
             <div className="card" style={{ paddingTop: "70px" }}>
               <i
                 className="bi bi-layers mb-2"
-                style={{ fontSize: "50px", color: "#64ffda" }}
+                style={{ fontSize: "60px", color: "#56dbb1" }}
               ></i>
               <div className="card-body mt-2">
-                <h4 className="card-title mb-3" style={{ color: "#ccd6f6" }}>
+                <h4 className="card-title mb-3" id="fontFam">
                   Designer
                 </h4>
                 <p className="card-text mb-4">
@@ -20,13 +23,15 @@ const Skills = () => {
                   thoughtful interactions.
                 </p>
                 <p className="card-text mb-4">
-                  <span style={{ color: "#64ffda" }}>
+                  <span style={{ color: "#6e07f3", fontWeight: 600 }}>
                     Things I enjoy designing:{" "}
                   </span>
                   <br /> UX, UI, Web, Logos
                 </p>
                 <p>
-                  <span style={{ color: "#64ffda" }}>Design Tools: </span>
+                  <span style={{ color: "#6e07f3", fontWeight: 600 }}>
+                    Design Tools:{" "}
+                  </span>
                   <br />
                   Figma <br />
                   Pen & Paper <br />
@@ -38,10 +43,10 @@ const Skills = () => {
             <div className="card" style={{ paddingTop: "70px" }}>
               <i
                 className="bi bi-code-square mb-2"
-                style={{ fontSize: "50px", color: "#64ffda" }}
+                style={{ fontSize: "60px", color: "#56dbb1" }}
               ></i>
               <div className="card-body mt-2">
-                <h4 className="card-title mb-3" style={{ color: "#ccd6f6" }}>
+                <h4 className="card-title mb-3" id="fontFam">
                   Frontend Developer
                 </h4>
                 <p className="card-text mb-4">
@@ -49,11 +54,15 @@ const Skills = () => {
                   to life in the browser.
                 </p>
                 <p className="card-text mb-4">
-                  <span style={{ color: "#64ffda" }}>Languages I Use: </span>
+                  <span style={{ color: "#6e07f3", fontWeight: 600 }}>
+                    Languages I Use:{" "}
+                  </span>
                   <br /> HTML, CSS, JavaScript, Tailwind CSS, jQuery, Git
                 </p>
                 <p>
-                  <span style={{ color: "#64ffda" }}>Dev Tools: </span>
+                  <span style={{ color: "#6e07f3", fontWeight: 600 }}>
+                    Dev Tools:{" "}
+                  </span>
                   <br />
                   Bootstrap
                   <br />
@@ -75,10 +84,10 @@ const Skills = () => {
             <div className="card" style={{ paddingTop: "70px" }}>
               <i
                 className="bi bi-database-check mb-2"
-                style={{ fontSize: "50px", color: "#64ffda" }}
+                style={{ fontSize: "60px", color: "#56dbb1" }}
               ></i>
               <div className="card-body mt-2">
-                <h4 className="card-title mb-3" style={{ color: "#ccd6f6" }}>
+                <h4 className="card-title mb-3" id="fontFam">
                   Backend Developer
                 </h4>
                 <p className="card-text mb-4">
@@ -86,11 +95,15 @@ const Skills = () => {
                   functionality behind the scenes.
                 </p>
                 <p className="card-text mb-4">
-                  <span style={{ color: "#64ffda" }}>Languages I Use: </span>
+                  <span style={{ color: "#6e07f3", fontWeight: 600 }}>
+                    Languages I Use:{" "}
+                  </span>
                   <br /> Node, Express, JavaScript, Python, PHP
                 </p>
                 <p>
-                  <span style={{ color: "#64ffda" }}>Dev Tools: </span>
+                  <span style={{ color: "#6e07f3", fontWeight: 600 }}>
+                    Dev Tools:{" "}
+                  </span>
                   <br />
                   Firebase
                   <br />

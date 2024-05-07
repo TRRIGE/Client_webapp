@@ -53,6 +53,11 @@ body {
   font-weight: 600;
 }
 
+#fontFam {
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+}
+
 #heroPage {
   margin-top: 100px;
 }
@@ -95,7 +100,7 @@ body {
   background-color: #ebf5ff;
   padding: 7px 13px 7px 13px;
   border-radius: 5px;
-  color: blue;
+  color: #6e07f3;
 }
 
 ::-webkit-scrollbar {
@@ -239,7 +244,7 @@ body {
 }
 
 .form-control {
-  border-color: red;
+  border-color: transparent;
   border-radius: 5px;
 }
 

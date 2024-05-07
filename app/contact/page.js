@@ -16,7 +16,7 @@ const Page = () => {
               style={{ borderRadius: "100%" }}
             />
           </div>
-          <h1 className="text-center mt-5 mb-5">Thanks for taking the time to reach out.<br /> How can I help you today?</h1>
+          <h1 className="text-center mt-3 mb-5">Thanks for taking the time to reach out.<br /> How can I help you today?</h1>
           <div className="col-8 mx-auto mb-5">
             <div className="row">
               <div className="col">

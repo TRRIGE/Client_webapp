@@ -8,13 +8,15 @@ const Footer = () => {
           <div className="col">
             <div className="card" id="footerBlackcontent">
               <div className="card-body text-white d-flex justify-content-between">
-                <h3 className="">Start a Project</h3>
+                <h3 className="" id="fontFam">
+                  Start a Project
+                </h3>
                 <h6>
                   Interested in working together? We should <br />
-                  queue up a time to chat. I’ll buy the coffee.
+                  queue up a time to chat. I&rsquo;ll buy the coffee.
                 </h6>
                 <button type="button" className="btn" id="navButtonFooter">
-                  Let's do This!
+                  Let&rsquo;s do This!
                 </button>
               </div>
             </div>

@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="container">
       <div className="row">
         <div className="col text-center" style={{ marginTop: "100px" }}>
-          <p id="heroTitle">Designer, Frontend Developer & Mentor</p>
+          <p id="heroTitle">Designer, Fullstack Developer & SelfLearner</p>
           <p className="fs-4">
             I design and code beautifully simple things, and I love what I do.
           </p>

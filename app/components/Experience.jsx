@@ -5,8 +5,11 @@ const Experience = () => {
     <div className="container">
       <div className="row" id="experience">
         <div className="col text-center mb-5" id="marginTop">
-          <h2>Experience</h2>
-          <p>My Prior Employement</p>
+          <h2 id="fontFam">Experience</h2>
+          <p>
+            In my prior employement i emerged with hands-on technical
+            <br /> experience cultivated through practical applications.
+          </p>
         </div>
       </div>
       <div className="row">
@@ -14,7 +17,7 @@ const Experience = () => {
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
-                <h5 className="card-title mb-2">
+                <h5 className="card-title mb-2 fw-bold">
                   InnoSewa Digitals Services Pvt. Ltd.
                 </h5>
                 <a
@@ -46,7 +49,7 @@ const Experience = () => {
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
-                <h5 className="card-title mb-2">LiveTechSkils</h5>
+                <h5 className="card-title mb-2 fw-bold">LiveTechSkils</h5>
                 <a
                   href="https://healthchat-3pvr.onrender.com/"
                   target="_blank"
