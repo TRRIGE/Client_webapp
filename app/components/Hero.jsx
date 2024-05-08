@@ -26,8 +26,14 @@ const Hero = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col text-center" id="heroPage">
-          <Image src={heroPage} height={350} width={860} alt="heroPage image" />
+        <div className="col text-center">
+          <Image
+            src={heroPage}
+            height={350}
+            width={860}
+            alt="heroPage image"
+            id="heroPage"
+          />
         </div>
       </div>
     </div>

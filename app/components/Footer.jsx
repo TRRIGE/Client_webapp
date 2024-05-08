@@ -7,7 +7,10 @@ const Footer = () => {
         <div className="row ms-3 me-3">
           <div className="col">
             <div className="card" id="footerBlackcontent">
-              <div className="card-body text-white d-flex justify-content-between">
+              <div
+                className="card-body text-white d-flex justify-content-between"
+                id="responsiveFooter"
+              >
                 <h3 className="" id="fontFam">
                   Start a Project
                 </h3>

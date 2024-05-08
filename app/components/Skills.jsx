@@ -9,7 +9,7 @@ const Skills = () => {
             className="card-group text-center no-margin-on-mobile"
             style={{ lineHeight: "30px" }}
           >
-            <div className="card" style={{ paddingTop: "70px" }}>
+            <div className="card" style={{ paddingTop: "90px" }}>
               <i
                 className="bi bi-layers mb-2"
                 style={{ fontSize: "60px", color: "#56dbb1" }}
@@ -40,7 +40,7 @@ const Skills = () => {
                 </p>
               </div>
             </div>
-            <div className="card" style={{ paddingTop: "70px" }}>
+            <div className="card" style={{ paddingTop: "90px" }}>
               <i
                 className="bi bi-code-square mb-2"
                 style={{ fontSize: "60px", color: "#56dbb1" }}
@@ -57,7 +57,7 @@ const Skills = () => {
                   <span style={{ color: "#6e07f3", fontWeight: 600 }}>
                     Languages I Use:{" "}
                   </span>
-                  <br /> HTML, CSS, JavaScript, Tailwind CSS, jQuery, Git
+                  <br /> HTML, CSS, JavaScript, jQuery
                 </p>
                 <p>
                   <span style={{ color: "#6e07f3", fontWeight: 600 }}>
@@ -68,10 +68,6 @@ const Skills = () => {
                   <br />
                   React
                   <br />
-                  Next
-                  <br />
-                  EJS
-                  <br />
                   Github
                   <br />
                   Vercel
@@ -81,7 +77,7 @@ const Skills = () => {
                 </p>
               </div>
             </div>
-            <div className="card" style={{ paddingTop: "70px" }}>
+            <div className="card" style={{ paddingTop: "90px" }}>
               <i
                 className="bi bi-database-check mb-2"
                 style={{ fontSize: "60px", color: "#56dbb1" }}
@@ -98,16 +94,12 @@ const Skills = () => {
                   <span style={{ color: "#6e07f3", fontWeight: 600 }}>
                     Languages I Use:{" "}
                   </span>
-                  <br /> Node, Express, JavaScript, Python, PHP
+                  <br /> Node, Express, JavaScript
                 </p>
                 <p>
                   <span style={{ color: "#6e07f3", fontWeight: 600 }}>
                     Dev Tools:{" "}
                   </span>
-                  <br />
-                  Firebase
-                  <br />
-                  Postman
                   <br />
                   MongoDB
                   <br />

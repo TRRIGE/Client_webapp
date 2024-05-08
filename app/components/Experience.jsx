@@ -49,7 +49,7 @@ const Experience = () => {
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
-                <h5 className="card-title mb-2 fw-bold">LiveTechSkils</h5>
+                <h5 className="card-title mb-2 fw-bold">LiveTechSkills</h5>
                 <a
                   href="https://healthchat-3pvr.onrender.com/"
                   target="_blank"
