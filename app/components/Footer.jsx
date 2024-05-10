@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -18,9 +19,11 @@ const Footer = () => {
                   Interested in working together? We should <br />
                   queue up a time to chat. I&rsquo;ll buy the coffee.
                 </h6>
-                <button type="button" className="btn" id="navButtonFooter">
-                  Let&rsquo;s do This!
-                </button>
+                <Link href="/project">
+                  <button type="button" className="btn" id="navButtonFooter">
+                    Let&rsquo;s do This!
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -36,33 +39,46 @@ const Footer = () => {
                 <div id="social">
                   <ul>
                     <li className="linkedin me-3">
-                      <button className="borderlinkedin">
-                        <i className="bi bi-linkedin"></i>
-                      </button>
+                      <a
+                        href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
+                        target="_blank"
+                      >
+                        <button className="borderlinkedin">
+                          <i className="bi bi-linkedin"></i>
+                        </button>
+                      </a>
                     </li>
 
                     <li className="facebook me-3">
-                      <button className="borderFacebook">
-                        <i className="bi bi-facebook"></i>
-                      </button>
+                      <a>
+                        <button className="borderFacebook">
+                          <i className="bi bi-facebook"></i>
+                        </button>
+                      </a>
                     </li>
 
                     <li className="twitter me-3">
-                      <button className="borderTwitter">
-                        <i className="bi bi-twitter"></i>
-                      </button>
+                      <a>
+                        <button className="borderTwitter">
+                          <i className="bi bi-twitter"></i>
+                        </button>
+                      </a>
                     </li>
 
                     <li className="instagram me-3">
-                      <button className="borderInsta">
-                        <i className="bi bi-instagram"></i>
-                      </button>
+                      <a>
+                        <button className="borderInsta">
+                          <i className="bi bi-instagram"></i>
+                        </button>
+                      </a>
                     </li>
 
                     <li className="dribbble me-3">
-                      <button className="borderDribble">
-                        <i className="bi bi-dribbble"></i>
-                      </button>
+                      <a>
+                        <button className="borderDribble">
+                          <i className="bi bi-dribbble"></i>
+                        </button>
+                      </a>
                     </li>
                   </ul>
                 </div>

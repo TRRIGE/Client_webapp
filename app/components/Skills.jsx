@@ -5,11 +5,12 @@ const Skills = () => {
     <div className="half-height-background" id="skills">
       <div className="container-fluid">
         <div className="row ms-3 me-3">
-          <div
-            className="card-group text-center no-margin-on-mobile"
-            style={{ lineHeight: "30px" }}
-          >
-            <div className="card" style={{ paddingTop: "90px" }}>
+          <div className="card-group text-center no-margin-on-mobile">
+            <div
+              className="card"
+              style={{ paddingTop: "90px" }}
+              id="skillsCard"
+            >
               <i
                 className="bi bi-layers mb-2"
                 style={{ fontSize: "60px", color: "#56dbb1" }}
@@ -40,7 +41,11 @@ const Skills = () => {
                 </p>
               </div>
             </div>
-            <div className="card" style={{ paddingTop: "90px" }}>
+            <div
+              className="card"
+              style={{ paddingTop: "90px" }}
+              id="skillsCard"
+            >
               <i
                 className="bi bi-code-square mb-2"
                 style={{ fontSize: "60px", color: "#56dbb1" }}
@@ -77,7 +82,11 @@ const Skills = () => {
                 </p>
               </div>
             </div>
-            <div className="card" style={{ paddingTop: "90px" }}>
+            <div
+              className="card"
+              style={{ paddingTop: "90px" }}
+              id="skillsCard"
+            >
               <i
                 className="bi bi-database-check mb-2"
                 style={{ fontSize: "60px", color: "#56dbb1" }}

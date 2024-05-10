@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import heroImage from "../assets/hero.jpg";
-import heroPage from "../assets/heroPage.svg";
+import hero from "../../public/hero.jpg";
+import heroPage from "../../public/heroPage.svg";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="row">
         <div className="col text-center mt-4">
           <Image
-            src={heroImage}
+            src={hero}
             height={205}
             width={205}
             alt="hero image"

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import heroImage from "../assets/hero.jpg";
+import hero from "../../../public/hero.jpg";
 
 const Page = () => {
   return (
@@ -9,7 +9,7 @@ const Page = () => {
         <div className="row">
           <div className="col text-center mt-3">
             <Image
-              src={heroImage}
+              src={hero}
               height={85}
               width={85}
               alt="hero image"
@@ -17,7 +17,7 @@ const Page = () => {
             />
           </div>
           <h1 className="text-center mt-3 mb-5">Thanks for taking the time to reach out.<br /> How can I help you today?</h1>
-          <div className="col-8 mx-auto mb-5">
+          <div className="col-lg-8 mx-auto mb-5">
             <div className="row">
               <div className="col">
                 <div data-mdb-input-init className="form-outline mb-4">
@@ -39,7 +39,7 @@ const Page = () => {
             </div>
             <div className="text-center">
               <button type="button" className="btn" id="navButtonConnect">
-                Send a Message
+                Send Your Message
               </button>
             </div>
           </div>

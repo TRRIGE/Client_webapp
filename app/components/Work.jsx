@@ -26,19 +26,12 @@ const Work = () => {
                   tracking and organization of inventory data.
                 </p>
                 <a
-                  href="https://healthchat-3pvr.onrender.com/"
+                  href="https://github.com/rutuuujaa/StockManager_Next-master"
                   target="_blank"
-                  className="link-offset-2 link-underline link-underline-opacity-0 me-2"
-                  id="projectBtn"
-                >
-                  <i className="bi bi-box-arrow-up-right"></i> stocklook.com
-                </a>
-                <a
-                  href="#"
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github"></i> GitHub
+                  <i className="bi bi-github me-1"></i> GitHub
                 </a>
               </div>
             </div>
@@ -52,18 +45,12 @@ const Work = () => {
                   intelligence, seeks to elevate healthcare accessibility.
                 </p>
                 <a
-                  href="#"
-                  className="link-offset-2 link-underline link-underline-opacity-0 me-2"
-                  id="projectBtn"
-                >
-                  <i className="bi bi-box-arrow-up-right"></i> healthChat.com
-                </a>
-                <a
-                  href="#"
+                  href="https://github.com/rutuuujaa/HealthChat-main"
+                  target="_blank"
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github"></i> GitHub
+                  <i className="bi bi-github me-1"></i> GitHub
                 </a>
               </div>
             </div>
@@ -77,18 +64,12 @@ const Work = () => {
                   enhance your daily work management.
                 </p>
                 <a
-                  href="#"
-                  className="link-offset-2 link-underline link-underline-opacity-0 me-2"
-                  id="projectBtn"
-                >
-                  <i className="bi bi-box-arrow-up-right"></i> todolist.com
-                </a>
-                <a
-                  href="#"
+                  href="https://github.com/rutuuujaa/Todolist"
+                  target="_blank"
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github"></i> GitHub
+                  <i className="bi bi-github me-1"></i> GitHub
                 </a>
               </div>
             </div>

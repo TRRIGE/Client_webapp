@@ -21,12 +21,12 @@ const Experience = () => {
                   InnoSewa Digitals Services Pvt. Ltd.
                 </h5>
                 <a
-                  href="https://healthchat-3pvr.onrender.com/"
+                  href="https://innosewa.com"
                   target="_blank"
                   className="link-offset-2 link-underline link-underline-opacity-0 ms-auto"
-                  id="projectBtn"
+                  id="experienceBtn"
                 >
-                  <i className="bi bi-box-arrow-up-right"></i>
+                  <i className="bi bi-box-arrow-up-right fs-5"></i>
                 </a>
               </div>
               <h6 className="mb-3" style={{ color: "#6e07f3" }}>
@@ -50,13 +50,15 @@ const Experience = () => {
             <div className="card-body">
               <div className="d-flex">
                 <h5 className="card-title mb-2 fw-bold">LiveTechSkills</h5>
+                <h3></h3>
                 <a
-                  href="https://healthchat-3pvr.onrender.com/"
+                  href="https://www.livetechskills.com/"
                   target="_blank"
                   className="link-offset-2 link-underline link-underline-opacity-0 ms-auto"
-                  id="projectBtn"
+                  id="experienceBtn"
                 >
-                  <i className="bi bi-box-arrow-up-right"></i>
+                  {" "}
+                  <i className="bi bi-box-arrow-up-right fs-5"></i>
                 </a>
               </div>
               <h6 className="mb-3" style={{ color: "#6e07f3" }}>
