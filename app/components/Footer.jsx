@@ -5,23 +5,23 @@ const Footer = () => {
   return (
     <div className="half-height-backgroundforFooter">
       <div className="container-fluid">
-        <div className="row ms-3 me-3">
-          <div className="col">
-            <div className="card" id="footerBlackcontent">
-              <div
-                className="card-body text-white d-flex justify-content-between"
-                id="responsiveFooter"
-              >
-                <h3 className="" id="fontFam">
-                  Start a Project
-                </h3>
-                <h6>
-                  Interested in working together? We should <br />
-                  queue up a time to chat. I&rsquo;ll buy the coffee.
-                </h6>
+        <div className="row ms-3 me-3 text-center">
+          <div className="card" id="footerBlackcontent">
+            <div className="card-body text-white d-lg-flex justify-lg-content-between">
+              <div className="col-lg-4" id="fontFam">
+                <p>Start a Project</p>
+              </div>
+              <div className="col-lg-4" id="fontFamFooter">
+                <p>
+                  Interested in working together? We should queue up a time to
+                  chat. I&rsquo;ll buy the coffee.
+                </p>
+              </div>
+              <div className="col-lg-4">
                 <Link href="/project">
                   <button type="button" className="btn" id="navButtonFooter">
-                    Let&rsquo;s do This!
+                    <i className="bi bi-rocket-takeoff me-3"></i>Let&rsquo;s do
+                    This!
                   </button>
                 </Link>
               </div>

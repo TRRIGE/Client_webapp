@@ -20,8 +20,9 @@ const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          id="navbarToggler"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon fs-3"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
@@ -40,13 +41,13 @@ const Navbar = () => {
                 Experience
               </a>
             </li>
-            <li className="nav-item me-4">
+            <li className="nav-item me-lg-3">
               <a className="nav-link" href="#work">
                 Work
               </a>
             </li>
           </ul>
-          <Link href="/contact">
+          <Link href="/contact" className="d-grid text-decoration-none">
             <button type="button" className="btn" id="navButton">
               Say Hello
             </button>

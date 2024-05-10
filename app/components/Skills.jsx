@@ -4,7 +4,10 @@ const Skills = () => {
   return (
     <div className="half-height-background" id="skills">
       <div className="container-fluid">
-        <div className="row ms-3 me-3">
+        <div
+          className="row"
+          style={{ marginLeft: "15px", marginRight: "15px" }}
+        >
           <div className="card-group text-center no-margin-on-mobile">
             <div
               className="card"
@@ -16,7 +19,11 @@ const Skills = () => {
                 style={{ fontSize: "60px", color: "#56dbb1" }}
               ></i>
               <div className="card-body mt-2">
-                <h4 className="card-title mb-3" id="fontFam">
+                <h4
+                  className="card-title mb-3"
+                  id="fontFam"
+                  style={{ fontSize: "24px" }}
+                >
                   Designer
                 </h4>
                 <p className="card-text mb-4">
@@ -51,7 +58,11 @@ const Skills = () => {
                 style={{ fontSize: "60px", color: "#56dbb1" }}
               ></i>
               <div className="card-body mt-2">
-                <h4 className="card-title mb-3" id="fontFam">
+                <h4
+                  className="card-title mb-3"
+                  id="fontFam"
+                  style={{ fontSize: "24px" }}
+                >
                   Frontend Developer
                 </h4>
                 <p className="card-text mb-4">
@@ -92,7 +103,11 @@ const Skills = () => {
                 style={{ fontSize: "60px", color: "#56dbb1" }}
               ></i>
               <div className="card-body mt-2">
-                <h4 className="card-title mb-3" id="fontFam">
+                <h4
+                  className="card-title mb-3"
+                  id="fontFam"
+                  style={{ fontSize: "24px" }}
+                >
                   Backend Developer
                 </h4>
                 <p className="card-text mb-4">

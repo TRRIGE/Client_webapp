@@ -5,9 +5,9 @@ const About = () => {
     <div id="about">
       <div className="container">
         <div className="row">
-          <div className="col-7 mx-auto text-center" id="marginTop">
+          <div className="col-lg-7 mx-auto text-center" id="marginTop">
             <h2 className="text-white mb-4" id="fontFam">
-              Hi, I&rsquo;m Rutuja. Nice to meet you.
+              Hi, I&rsquo;m Rutuja.<span id="break"></span> Nice to meet you.
             </h2>
             <p className="text-white">
               Embarking on my journey as a budding freelance designer,

@@ -34,6 +34,19 @@ body {
   font-weight: 600;
 }
 
+#navbarToggler {
+  border: transparent;
+}
+
+#navbarToggler:focus {
+  border: transparent;
+  box-shadow: none;
+}
+
+#navbarToggler span {
+  color: #56dbb1;
+}
+
 #navButtonFooter {
   border-radius: 45px;
   border: 2px solid #56dbb1;
@@ -53,9 +66,19 @@ body {
   font-weight: 600;
 }
 
+#heroTopMargin {
+  margin-top: 100px;
+}
+
 #fontFam {
   font-family: "Teko", sans-serif;
   font-weight: 700;
+  font-size: 32px;
+}
+
+#fontFamFooter {
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
 }
 
 #heroPage {
@@ -80,6 +103,11 @@ body {
 }
 
 #experienceCard {
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.experienceCard {
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -138,11 +166,17 @@ body {
 #footerBlackcontent {
   border-radius: 15px;
   background-color: #141c3a;
-  padding: 40px 120px 40px 120px;
+  padding: 40px 10px 30px 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 #workCard {
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+}
+
+.workCard {
   transition: all 0.3s ease-in-out;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 15px;
@@ -290,5 +324,47 @@ body .form-select:focus {
   #heroPage {
     width: 312px;
     height: 126px;
+  }
+
+  #experienceCard {
+    margin-bottom: 20px;
+  }
+
+  #workCard {
+    margin-bottom: 20px;
+  }
+
+  #navbarSupportedContent ul li a {
+    text-align: center;
+  }
+
+  #navButton {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  #fontFam {
+    margin-bottom: 30px;
+  }
+
+  #navButtonFooter {
+    margin-top: 30px;
+  }
+
+  #break::after {
+    content: "\a";
+    white-space: pre;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  #heroTopMargin {
+    margin-top: 50px;
   }
 }

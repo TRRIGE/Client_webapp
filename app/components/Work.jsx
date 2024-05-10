@@ -5,14 +5,15 @@ const Work = () => {
     <div className="half-height-backgroundforWork" id="marginTopOuter">
       <div className="container-fluid">
         <div className="row" id="work">
-          <div className="col text-center mb-5 text-white" id="marginTop">
+          <div
+            className="col-lg-7 mx-auto text-center mb-5 text-white"
+            id="marginTop"
+          >
             <h2 id="fontFam">My Recent Work</h2>
             <p>
               During my college years and various internships, I explored
-              countless <br />
-              digital products. Inspired by the challenge, I began crafting my
-              own,
-              <br /> driven by a passion for innovative design.
+              countless digital products. Inspired by the challenge, I began
+              crafting my own, driven by a passion for innovative design.
             </p>
           </div>
         </div>
@@ -56,7 +57,7 @@ const Work = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="card p-4 text-center" id="workCard">
+            <div className="card p-4 text-center workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">TodoList</h2>
                 <p className="card-text mb-5">

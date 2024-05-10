@@ -4,11 +4,11 @@ const Experience = () => {
   return (
     <div className="container">
       <div className="row" id="experience">
-        <div className="col text-center mb-5" id="marginTop">
+        <div className="col-lg-7 mx-auto text-center mb-5" id="marginTop">
           <h2 id="fontFam">Experience</h2>
           <p>
-            In my prior employement i emerged with hands-on technical
-            <br /> experience cultivated through practical applications.
+            In my prior employement i emerged with hands-on technical experience
+            cultivated through practical applications.
           </p>
         </div>
       </div>
@@ -17,9 +17,7 @@ const Experience = () => {
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
-                <h5 className="card-title mb-2 fw-bold">
-                  InnoSewa Digitals Services Pvt. Ltd.
-                </h5>
+                <h5 className="card-title mb-2 fw-bold">InnoSewa Pvt. Ltd.</h5>
                 <a
                   href="https://innosewa.com"
                   target="_blank"
@@ -46,7 +44,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="col-lg-6">
-          <div className="card p-3" id="experienceCard">
+          <div className="card p-3 experienceCard">
             <div className="card-body">
               <div className="d-flex">
                 <h5 className="card-title mb-2 fw-bold">LiveTechSkills</h5>
