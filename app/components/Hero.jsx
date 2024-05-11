@@ -6,15 +6,15 @@ import heroPage from "../../public/heroPage.svg";
 const Hero = () => {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row" id="textOrder">
         <div className="col text-center" id="heroTopMargin">
-          <p id="heroTitle">Designer, Fullstack Developer & SelfLearner</p>
+          <p id="heroTitle">Designer, Fullstack Developer & Self-Learner</p>
           <p className="fs-4">
             I design and code beautifully simple things, and I love what I do.
           </p>
         </div>
       </div>
-      <div className="row">
+      <div className="row" id="imageOrder">
         <div className="col text-center mt-4">
           <Image
             src={hero}

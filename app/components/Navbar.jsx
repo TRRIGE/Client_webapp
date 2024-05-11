@@ -3,13 +3,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary pt-2 sticky-top">
+    <nav className="navbar navbar-expand-lg bg-white pt-2 sticky-top">
       <div className="container">
-        <a
-          className="navbar-brand"
-          href="/"
-          style={{ color: "#7510f7", fontSize: "32px", fontWeight: 600 }}
-        >
+        <a className="navbar-brand" href="/" id="navBrand">
           Rutuja Kothekar
         </a>
         <button
@@ -22,7 +18,11 @@ const Navbar = () => {
           aria-label="Toggle navigation"
           id="navbarToggler"
         >
-          <span className="navbar-toggler-icon fs-3"></span>
+          <span
+            className="navbar-toggler-icon fs-6"
+            aria-hidden="true"
+            style={{ color: "red" }}
+          ></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
@@ -47,7 +47,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <Link href="/contact" className="d-grid text-decoration-none">
+          <Link href="#getInTouch" className="d-grid text-decoration-none">
             <button type="button" className="btn" id="navButton">
               Say Hello
             </button>

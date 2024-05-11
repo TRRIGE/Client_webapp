@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about">
+    <div id="aboutBcakground">
       <div className="container">
-        <div className="row">
+        <div className="row" id="about">
           <div className="col-lg-7 mx-auto text-center" id="marginTop">
             <h2 className="text-white mb-4" id="fontFam">
               Hi, I&rsquo;m Rutuja.<span id="break"></span> Nice to meet you.

@@ -2,6 +2,12 @@ body {
   font-size: 17px;
 }
 
+#navBrand {
+  color: #7510f7;
+  font-size: 32px;
+  font-weight: 600;
+}
+
 #navbarSupportedContent ul li a:hover {
   color: #6e07f3;
   font-weight: 600;
@@ -20,7 +26,7 @@ body {
   font-weight: 600;
 }
 
-#navButtonConnect {
+#formButton {
   border-radius: 25px;
   border: 2px solid #6e07f3;
   color: #6e07f3;
@@ -28,7 +34,7 @@ body {
   font-size: 20px;
 }
 
-#navButtonConnect:hover {
+#formButton:hover {
   background-color: #6e07f3;
   color: white;
   font-weight: 600;
@@ -41,10 +47,6 @@ body {
 #navbarToggler:focus {
   border: transparent;
   box-shadow: none;
-}
-
-#navbarToggler span {
-  color: #56dbb1;
 }
 
 #navButtonFooter {
@@ -85,7 +87,7 @@ body {
   margin-top: 100px;
 }
 
-#about {
+#aboutBcakground {
   background-color: #6e07f3;
 }
 
@@ -166,7 +168,7 @@ body {
 #footerBlackcontent {
   border-radius: 15px;
   background-color: #141c3a;
-  padding: 40px 10px 30px 20px;
+  padding: 40px 10px 20px 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
@@ -321,6 +323,22 @@ body .form-select:focus {
 }
 
 @media (max-width: 576px) {
+  #heroTitle {
+    font-size: 35px;
+  }
+
+  #navBrand {
+    font-size: 25px;
+  }
+
+  #textOrder {
+    order: 2;
+  }
+
+  #imageOrder {
+    order: 1;
+  }
+
   #heroPage {
     width: 312px;
     height: 126px;
@@ -355,6 +373,14 @@ body .form-select:focus {
     content: "\a";
     white-space: pre;
   }
+
+  .half-height-background {
+    background: linear-gradient(to bottom, #6e07f3 110px, #ffffff 110px);
+  }
+
+  .half-height-backgroundforWork {
+    background: linear-gradient(to bottom, #6e07f3 550px, #ffffff 550px);
+  }
 }
 
 @media (max-width: 992px) {
@@ -365,6 +391,6 @@ body .form-select:focus {
   }
 
   #heroTopMargin {
-    margin-top: 50px;
+    margin-top: 90px;
   }
 }

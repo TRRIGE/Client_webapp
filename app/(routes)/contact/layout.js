@@ -9,7 +9,7 @@ export default function Layout({ children }) {
                     <a
                         className="navbar-brand"
                         href="/"
-                        style={{ color: "#7510f7", fontSize: "32px", fontWeight: 600 }}
+                        id="navBrand"
                     >
                         Rutuja Kothekar
                     </a>
@@ -21,10 +21,11 @@ export default function Layout({ children }) {
                         aria-controls="navbarSupportedContent"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
+                        id="navbarToggler"
                     >
-                        <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon fs-6"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
                         <Link href="/" className="ms-auto">
                             <button type="button" className="btn" id="navButton">
                                 Home
@@ -34,7 +35,6 @@ export default function Layout({ children }) {
                 </div>
             </nav>
             <main>{children}</main>
-
         </>
     )
 }

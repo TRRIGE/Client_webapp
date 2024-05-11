@@ -57,7 +57,7 @@ const Work = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="card p-4 text-center workCard">
+            <div className="card p-4 text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">TodoList</h2>
                 <p className="card-text mb-5">
@@ -70,7 +70,7 @@ const Work = () => {
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github me-1"></i> GitHub
+                  <i className="bi bi-github me-1" id="getInTouch"></i> GitHub
                 </a>
               </div>
             </div>

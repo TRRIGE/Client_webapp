@@ -18,7 +18,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="col-lg-4">
-                <Link href="/project">
+                <Link href="/contact">
                   <button type="button" className="btn" id="navButtonFooter">
                     <i className="bi bi-rocket-takeoff me-3"></i>Let&rsquo;s do
                     This!
