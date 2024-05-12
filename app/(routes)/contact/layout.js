@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Layout({ children }) {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary pt-2 sticky-top">
+            <nav className="navbar navbar-expand-lg bg-white pt-2 sticky-top">
                 <div className="container">
                     <a
                         className="navbar-brand"

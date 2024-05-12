@@ -1,8 +1,8 @@
-"use client"
+'use client'
 
+import React, { useRef, useState } from 'react';
 import Image from "next/image";
 import hero from "../../../public/hero.jpg";
-import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 
@@ -13,6 +13,7 @@ const Page = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+
     var success = document.getElementById("success");
     e.preventDefault();
     setIsPending(true);
@@ -28,6 +29,7 @@ const Page = () => {
     setTimeout(() => {
       success.style.display = "none";
     }, 7000)
+
   }
 
   function checkForm(e) {
@@ -36,7 +38,7 @@ const Page = () => {
     var emailValue = document.getElementById('form_email').value.trim();
     var messageValue = document.getElementById('message').value.trim();
 
-    var submitButton = document.getElementById('formButton');
+    var submitButton = document.getElementById('navButtonConnect');
 
     if (nameValue !== '' && lastNameValue !== '' && emailValue !== '' && messageValue !== '') {
       submitButton.removeAttribute('disabled');
@@ -64,29 +66,29 @@ const Page = () => {
               <div className="row">
                 <div className="col">
                   <div data-mdb-input-init className="form-outline mb-4">
-                    <input type="text" name="form_name" id="form_name" className="form-control" placeholder="Name" style={{ height: '50px' }} />
+                    <input type="text" name="form_name" id="form_name" className="form-control" placeholder="Name" style={{ height: '50px' }} onInput={checkForm} />
                   </div>
                 </div>
                 <div className="col">
                   <div data-mdb-input-init className="form-outline mb-4">
-                    <input type="text" name="form_lastName" id="form_lastName" className="form-control" placeholder="Lastname" style={{ height: '50px' }} />
+                    <input type="text" name="form_lastName" id="form_lastName" className="form-control" placeholder="Lastname" style={{ height: '50px' }} onInput={checkForm} />
                   </div>
                 </div>
               </div>
               <div data-mdb-input-init className="form-outline mb-4">
-                <input type="email" name="form_email" id="form_email" className="form-control" placeholder="Email" style={{ height: '50px' }} />
+                <input type="email" name="form_email" id="form_email" className="form-control" placeholder="Email" style={{ height: '50px' }} onInput={checkForm} />
               </div>
               <div className="form-floating mb-4">
-                <textarea name="message" id="message" className="form-control" placeholder="Leave a comment here" style={{ height: '100px' }}></textarea>
+                <textarea name="message" id="message" className="form-control" placeholder="Leave a comment here" style={{ height: '100px' }} onInput={checkForm}></textarea>
                 <label htmlFor="message">Message</label>
               </div>
               <div className="text-center">
-                <button type="button" id='formButton' value="Send" className="btn" disabled>
+                <button type="button" id='navButtonConnect' value="Send" className="btn" disabled>
                   Send Your Message
                 </button>
               </div>
               <div className='fw-bold text-center mt-2' id="success">Your message sent succesfully!</div>
-              {isPending && <div className='fw-bold text-center mt-2' style={{ color: "#64ffda", animation: "3s linear" }}>Message Sending...</div>}
+              {isPending && <div className='fw-bold text-center mt-2' style={{ color: "black", animation: "3s linear" }}>Message Sending...</div>}
             </form>
           </div>
         </div>

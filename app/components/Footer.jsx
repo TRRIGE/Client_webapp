@@ -49,16 +49,19 @@ const Footer = () => {
                       </a>
                     </li>
 
-                    <li className="facebook me-3">
-                      <a>
-                        <button className="borderFacebook">
-                          <i className="bi bi-facebook"></i>
+                    <li className="github me-3">
+                      <a href="https://github.com/rutuuujaa" target="_blank">
+                        <button className="bordergithub">
+                          <i className="bi bi-github"></i>
                         </button>
                       </a>
                     </li>
 
                     <li className="twitter me-3">
-                      <a>
+                      <a
+                        href="https://twitter.com/kothekar_rutuja"
+                        target="_blank"
+                      >
                         <button className="borderTwitter">
                           <i className="bi bi-twitter"></i>
                         </button>
