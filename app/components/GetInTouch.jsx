@@ -8,7 +8,7 @@ const GetInTouch = () => {
         <p className="display-5" style={{ color: "#6e07f3", fontWeight: 800 }}>
           Get In Touch
         </p>
-        <div className="col-lg-7 mx-auto">
+        <div className="col-lg-7 col-md-6 col-sm-6 mx-auto">
           <p className="fs-5">
             I am actively exploring new opportunities and welcome any inquiries
             or connections. My inbox is open, so feel free to reach out if you

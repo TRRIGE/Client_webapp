@@ -33,10 +33,10 @@ const Experience = () => {
               <p className="card-text">
                 My primary responsibility entailed meticulously tailoring
                 projects to precisely meet client needs, ensuring excellence in
-                execution and exceeding expectations at every turn.
+                exceeding expectations at every turn.
               </p>
               <p>
-                Crafting intricate web application blueprints and structures
+                Crafting intricate web apps blueprints and structures
                 meticulously tailored to suit client needs, ensuring a precise
                 alignment with their unique requirements and objectives.
               </p>
@@ -44,7 +44,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="col-lg-6">
-          <div className="card p-3 experienceCard">
+          <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
                 <h5 className="card-title mb-2 fw-bold">LiveTechSkills</h5>

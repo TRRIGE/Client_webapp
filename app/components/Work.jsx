@@ -6,7 +6,7 @@ const Work = () => {
       <div className="container-fluid">
         <div className="row" id="work">
           <div
-            className="col-lg-7 mx-auto text-center mb-5 text-white"
+            className="col-lg-7 col-md-6 col-sm-6 mx-auto text-center mb-5 text-white"
             id="marginTop"
           >
             <h2 id="fontFam">My Recent Work</h2>

@@ -7,17 +7,17 @@ const Footer = () => {
       <div className="container-fluid">
         <div className="row ms-3 me-3 text-center">
           <div className="card" id="footerBlackcontent">
-            <div className="card-body text-white d-lg-flex justify-lg-content-between">
-              <div className="col-lg-4" id="fontFam">
+            <div className="card-body text-white d-lg-flex justify-lg-content-between d-md-flex justify-md-content-between">
+              <div className="col-lg-4 col-md-4" id="fontFam">
                 <p>Start a Project</p>
               </div>
-              <div className="col-lg-4" id="fontFamFooter">
+              <div className="col-lg-4 col-md-4" id="fontFamFooter">
                 <p>
                   Interested in working together? We should queue up a time to
                   chat. I&rsquo;ll buy the coffee.
                 </p>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 col-md-4">
                 <Link href="/contact">
                   <button type="button" className="btn" id="navButtonFooter">
                     <i className="bi bi-rocket-takeoff me-3"></i>Let&rsquo;s do
