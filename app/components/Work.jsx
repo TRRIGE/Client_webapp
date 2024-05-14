@@ -6,7 +6,7 @@ const Work = () => {
       <div className="container-fluid">
         <div className="row" id="work">
           <div
-            className="col-lg-7 col-md-6 col-sm-6 mx-auto text-center mb-5 text-white"
+            className="col-lg-6 col-sm-8 col-md-10 mx-auto text-center mb-5 text-white"
             id="marginTop"
           >
             <h2 id="fontFam">My Recent Work</h2>
@@ -22,9 +22,12 @@ const Work = () => {
             <div className="card p-4 text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">Stocklook</h2>
-                <p className="card-text mb-5">
+                <p className="card-text">
                   Build a thorough Stock Management System, ensuring streamlined
                   tracking and organization of inventory data.
+                </p>
+                <p className="mt-5 mb-4 small projectSkills">
+                  React Bootstrap CSS MongoDb
                 </p>
                 <a
                   href="https://github.com/rutuuujaa/StockManager_Next-master"
@@ -32,7 +35,7 @@ const Work = () => {
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github me-1"></i> GitHub
+                  <i className="bi bi-github me-1 fs-6"></i> GitHub
                 </a>
               </div>
             </div>
@@ -41,9 +44,12 @@ const Work = () => {
             <div className="card p-4 text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">HealthChat</h2>
-                <p className="card-text mb-5">
+                <p className="card-text">
                   The Health Care Chat Bot Project, powered by artificial
                   intelligence, seeks to elevate healthcare accessibility.
+                </p>
+                <p className="mt-5 mb-4 small projectSkills">
+                  Python JavaScript Flask CSS
                 </p>
                 <a
                   href="https://github.com/rutuuujaa/HealthChat-main"
@@ -51,7 +57,7 @@ const Work = () => {
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github me-1"></i> GitHub
+                  <i className="bi bi-github me-1 fs-6"></i> GitHub
                 </a>
               </div>
             </div>
@@ -60,9 +66,12 @@ const Work = () => {
             <div className="card p-4 text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">TodoList</h2>
-                <p className="card-text mb-5">
-                  Remainder Web Application, solution designed to streamline and
+                <p className="card-text">
+                  Todolist Web Application, solution designed to streamline and
                   enhance your daily work management.
+                </p>
+                <p className="mt-5 mb-4 small projectSkills">
+                  React Bootstrap CSS JavaScript
                 </p>
                 <a
                   href="https://github.com/rutuuujaa/Todolist"
@@ -70,7 +79,8 @@ const Work = () => {
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github me-1" id="getInTouch"></i> GitHub
+                  <i className="bi bi-github me-1 fs-6" id="getInTouch"></i>{" "}
+                  GitHub
                 </a>
               </div>
             </div>

@@ -69,7 +69,10 @@ const Footer = () => {
                     </li>
 
                     <li className="instagram me-3">
-                      <a>
+                      <a
+                        href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
+                        target="_blank"
+                      >
                         <button className="borderInsta">
                           <i className="bi bi-instagram"></i>
                         </button>
@@ -77,7 +80,10 @@ const Footer = () => {
                     </li>
 
                     <li className="dribbble me-3">
-                      <a>
+                      <a
+                        href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
+                        target="_blank"
+                      >
                         <button className="borderDribble">
                           <i className="bi bi-dribbble"></i>
                         </button>

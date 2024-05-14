@@ -22,6 +22,7 @@ const Hero = () => {
             width={205}
             alt="hero image"
             style={{ borderRadius: "100%" }}
+            priority
           />
         </div>
       </div>

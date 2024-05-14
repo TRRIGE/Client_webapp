@@ -40,6 +40,20 @@ body {
   font-weight: 600;
 }
 
+#navButtonAbout {
+  border-radius: 25px;
+  border: 2px solid white;
+  color: white;
+  padding: 7px 25px 7px 25px;
+  font-size: 20px;
+}
+
+#navButtonAbout:hover {
+  background-color: white;
+  color: #6e07f3;
+  font-weight: 600;
+}
+
 #navbarToggler {
   border: transparent;
 }
@@ -73,13 +87,11 @@ body {
 }
 
 #fontFam {
-  font-family: "Teko", sans-serif;
   font-weight: 700;
   font-size: 32px;
 }
 
 #fontFamFooter {
-  font-family: "Teko", sans-serif;
   font-size: 18px;
 }
 
@@ -200,6 +212,17 @@ body {
   box-shadow: 0px 23px 25px -28px rgba(0, 0, 0, 0.45);
 }
 
+.projectSkills {
+  font-family: "Oxygen", monospace;
+  word-spacing: 15px;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+#workCard:hover .projectSkills {
+  color: #6e07f3;
+}
+
 #social li {
   display: inline-block;
   list-style-type: none;
@@ -310,22 +333,9 @@ body {
   font-size: 22px;
 }
 
-body .form-control {
-  border-color: lightgray;
-  border-radius: 5px;
-}
-
 body .form-control:focus {
-  box-shadow: 0 0 0 0.1rem #141c3a;
-}
-
-body .form-select {
-  border-color: lightgray;
-  border-radius: 5px;
-}
-
-body .form-select:focus {
-  box-shadow: 0 0 0 0.1rem #141c3a;
+  box-shadow: 0 0 0 0.1rem #56dbb1;
+  border: #56dbb1;
 }
 
 @media (max-width: 576px) {
@@ -337,42 +347,9 @@ body .form-select:focus {
     font-size: 25px;
   }
 
-  #textOrder {
-    order: 2;
-  }
-
-  #imageOrder {
-    order: 1;
-  }
-
   #heroPage {
     width: 312px;
     height: 126px;
-  }
-
-  #experienceCard {
-    margin-bottom: 20px;
-  }
-
-  #workCard {
-    margin-bottom: 20px;
-  }
-
-  #navbarSupportedContent ul li a {
-    text-align: center;
-  }
-
-  #navButton {
-    margin-bottom: 50px;
-    margin-top: 20px;
-  }
-
-  #fontFam {
-    margin-bottom: 30px;
-  }
-
-  #navButtonFooter {
-    margin-top: 30px;
   }
 
   #break::after {
@@ -404,16 +381,6 @@ body .form-select:focus {
 }
 
 @media (max-width: 992px) {
-  .navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-  }
-
-  #heroTopMargin {
-    margin-top: 90px;
-  }
-
   #experienceCard {
     margin-bottom: 20px;
   }
@@ -427,7 +394,7 @@ body .form-select:focus {
   }
 
   #navButton {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 20px;
   }
 

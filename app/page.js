@@ -1,4 +1,7 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
+import DotLoader from "react-spinners/DotLoader";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
@@ -10,16 +13,42 @@ import Navbar from './components/Navbar';
 
 
 const page = () => {
+
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3500);
+  }, [])
+
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Work />
-      <GetInTouch />
-      <Footer />
+      {loading ?
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: 'white' }}>
+          <DotLoader
+
+            color={"#6e07f3"}
+            loading={loading}
+            className='mb-5'
+            size={60}
+          />
+          <div style={{ color: '#6e07f3', fontfamily: "Space Grotesk sans-serif", letterSpacing: '3.5px', wordSpacing: '5px' }}
+          >Code Develope Vibe</div>
+        </div>
+        :
+        <>
+          <Navbar />
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Work />
+          <GetInTouch />
+          <Footer />
+        </>
+      }
     </>
   )
 }

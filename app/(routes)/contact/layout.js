@@ -26,14 +26,14 @@ export default function Layout({ children }) {
                         <span className="navbar-toggler-icon fs-6"></span>
                     </button>
                     <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                        <Link href="/" className="ms-auto">
+                        <Link href="/" className="ms-auto d-grid text-decoration-none">
                             <button type="button" className="btn" id="navButton">
                                 Home
                             </button>
                         </Link>
                     </div>
                 </div>
-            </nav>
+            </nav >
             <main>{children}</main>
         </>
     )

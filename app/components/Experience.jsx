@@ -33,10 +33,10 @@ const Experience = () => {
               <p className="card-text">
                 My primary responsibility entailed meticulously tailoring
                 projects to precisely meet client needs, ensuring excellence in
-                exceeding expectations at every turn.
+                execution and exceeding expectations at every turn.
               </p>
               <p>
-                Crafting intricate web apps blueprints and structures
+                Crafting intricate web application blueprints and structures
                 meticulously tailored to suit client needs, ensuring a precise
                 alignment with their unique requirements and objectives.
               </p>
@@ -65,7 +65,7 @@ const Experience = () => {
               <p className="card-text">
                 Driven by a passion for crafting seamless user experiences, I
                 excel in front-end finesse, ensuring every pixel aligns with
-                user expectations and needs.
+                user expectations and needs end users.
               </p>
               <p>
                 With an insatiable curiosity for full-stack development, I
