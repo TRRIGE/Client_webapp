@@ -26,17 +26,10 @@ const errorPage = () => {
                   4
                 </span>
               </h2>
-              <h3 className="h2 mb-2">Oops! You're lost.</h3>
+              <h3 className="h2 mb-2">Oops! You&rsquo;re lost.</h3>
               <p className="mb-5">
                 The page you are looking for was not found.
               </p>
-              {/* <a
-                className="btn bsb-btn-5xl btn-dark rounded-pill px-5 fs-6 m-0"
-                href="/"
-                role="button"
-              >
-                Back to Home
-              </a> */}
               <Link href="/">
                 <button type="button" className="btn pe-4 ps-4" id="navButton">
                   <i className="bi bi-house me-2"></i> Back to Home
