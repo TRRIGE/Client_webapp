@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0 });
+    }
+  }, [controls, inView]);
+
   return (
     <div id="aboutBcakground">
       <div className="container">
-        <div className="row" id="about">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls}
+          transition={{ duration: 0.9 }}
+          className="row"
+          id="about"
+        >
           <div className="col-lg-7 mx-auto text-center" id="marginTop">
             <h2 className="text-white mb-4 lead" id="fontFam">
               Hi, I&rsquo;m Rutuja.<span id="break"></span> Nice to meet you.
@@ -26,7 +46,7 @@ const About = () => {
               </button>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,11 +1,30 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Footer = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0 });
+    }
+  }, [controls, inView]);
+
   return (
     <div className="half-height-backgroundforFooter">
       <div className="container-fluid">
-        <div className="row ms-3 me-3 text-center">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls}
+          transition={{ duration: 0.9 }}
+          className="row ms-3 me-3 text-center"
+        >
           <div className="card" id="footerBlackcontent">
             <div className="card-body text-white d-lg-flex justify-lg-content-between d-md-flex justify-md-content-between">
               <div className="col-lg-4 col-md-4" id="fontFam">
@@ -27,8 +46,14 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
+        </motion.div>
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls}
+          transition={{ duration: 0.9 }}
+          className="row"
+        >
           <div className="col text-center text-white" id="footerMargin">
             <h4>
               Living, learning, & leveling up <br />
@@ -98,7 +123,7 @@ const Footer = () => {
               Rutuja Kothekar.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

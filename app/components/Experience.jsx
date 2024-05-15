@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Experience = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0 });
+    }
+  }, [controls, inView]);
+
   return (
     <div className="container">
-      <div className="row" id="experience">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={controls}
+        transition={{ duration: 0.9 }}
+        className="row"
+        id="experience"
+      >
         <div className="col-lg-7 mx-auto text-center mb-5" id="marginTop">
           <h2 id="fontFam">Experience</h2>
           <p>
@@ -11,9 +31,15 @@ const Experience = () => {
             cultivated through practical applications.
           </p>
         </div>
-      </div>
+      </motion.div>
       <div className="row">
-        <div className="col">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls}
+          transition={{ duration: 0.9 }}
+          className="col-lg-6"
+        >
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
@@ -42,8 +68,14 @@ const Experience = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="col-lg-6">
+        </motion.div>
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls}
+          transition={{ duration: 0.9 }}
+          className="col-lg-6"
+        >
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
@@ -74,7 +106,7 @@ const Experience = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

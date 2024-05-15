@@ -1,20 +1,33 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import hero from "../../public/hero.jpg";
 import heroPage from "../../public/heroPage.svg";
 
 const Hero = () => {
   return (
     <div className="container">
-      <div className="row" id="textOrder">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="row"
+      >
         <div className="col text-center" id="heroTopMargin">
           <p id="heroTitle">Designer, Fullstack Developer & Self-Learner</p>
           <p className="fs-4">
             I design and code beautifully simple things, and I love what I do.
           </p>
         </div>
-      </div>
-      <div className="row" id="imageOrder">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="row"
+      >
         <div className="col text-center mt-4">
           <Image
             src={hero}
@@ -25,7 +38,7 @@ const Hero = () => {
             priority
           />
         </div>
-      </div>
+      </motion.div>
       <div className="row">
         <div className="col text-center">
           <Image

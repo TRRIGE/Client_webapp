@@ -1,10 +1,17 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-white pt-2 sticky-top">
-      <div className="container">
+    <motion.nav className="navbar navbar-expand-lg bg-white pt-2 sticky-top">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="container"
+      >
         <a className="navbar-brand" href="/" id="navBrand">
           Rutuja Kothekar
         </a>
@@ -53,8 +60,8 @@ const Navbar = () => {
             </button>
           </Link>
         </div>
-      </div>
-    </nav>
+      </motion.div>
+    </motion.nav>
   );
 };
 

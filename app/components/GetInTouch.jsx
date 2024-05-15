@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const GetInTouch = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0 });
+    }
+  }, [controls, inView]);
   return (
     <div className="container">
-      <div className="row section text-center" id="marginTopOuter">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={controls}
+        transition={{ duration: 0.9 }}
+        className="row section text-center"
+        id="marginTopOuter"
+      >
         <h2 id="fontFam">What&rsquo;s Next?</h2>
         <p className="display-5" style={{ color: "#6e07f3", fontWeight: 800 }}>
           Get In Touch
@@ -24,7 +43,7 @@ const GetInTouch = () => {
             </button>
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
