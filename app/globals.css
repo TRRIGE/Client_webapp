@@ -405,4 +405,21 @@ body .form-control:focus {
   #navButtonFooter {
     margin-top: 30px;
   }
+
+  #scrollUp {
+    bottom: 20px;
+    right: 25px;
+    height: 20px;
+    width: 20px;
+    border: solid #6e07f3;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  #scrollUp:hover {
+    border-color: #56dbb1;
+  }
 }
