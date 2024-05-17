@@ -118,12 +118,14 @@ body {
 
 #experienceCard {
   border-radius: 15px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .experienceCard {
   border-radius: 15px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 #experienceBtn {
@@ -136,7 +138,8 @@ body {
 }
 
 #skillsCard {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   line-height: 30px;
 }
 
@@ -192,13 +195,8 @@ body {
 
 #workCard {
   transition: all 0.3s ease-in-out;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 15px;
-}
-
-.workCard {
-  transition: all 0.3s ease-in-out;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   border-radius: 15px;
 }
 
@@ -363,6 +361,10 @@ body .form-control:focus {
 
   .half-height-backgroundforWork {
     background: linear-gradient(to bottom, #6e07f3 550px, #ffffff 550px);
+  }
+
+  #social ul li {
+    margin-right: 0px;
   }
 }
 

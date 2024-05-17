@@ -37,7 +37,13 @@ const Work = () => {
             </p>
           </div>
         </motion.div>
-        <div className="row ms-3 me-3">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls}
+          transition={{ duration: 0.9 }}
+          className="row ms-3 me-3"
+        >
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 50 }}
@@ -123,7 +129,7 @@ const Work = () => {
               </div>
             </div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

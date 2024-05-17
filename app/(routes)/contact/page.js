@@ -1,6 +1,8 @@
 'use client'
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import PropagateLoader from "react-spinners/PropagateLoader"
 import Image from "next/image";
 import hero from "../../../public/hero.jpg";
@@ -8,6 +10,17 @@ import emailjs from '@emailjs/browser';
 
 
 const Page = () => {
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0 });
+    }
+  }, [controls, inView]);
 
   const [isPending, setIsPending] = useState(false)
 
@@ -50,7 +63,12 @@ const Page = () => {
 
   return (
     <div className="container">
-      <div className="row">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={controls}
+        transition={{ duration: 0.9 }}
+        className="row">
         <div className="col text-center mt-3">
           <Image
             src={hero}
@@ -94,7 +112,7 @@ const Page = () => {
             />}
           </form>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
