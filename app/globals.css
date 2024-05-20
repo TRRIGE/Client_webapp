@@ -226,6 +226,10 @@ body {
   list-style-type: none;
 }
 
+#social li {
+  margin-right: 20px;
+}
+
 .linkedin .borderlinkedin {
   background-color: transparent;
   border: 2px solid white;
@@ -363,8 +367,8 @@ body .form-control:focus {
     background: linear-gradient(to bottom, #6e07f3 550px, #ffffff 550px);
   }
 
-  #social ul li {
-    margin-right: 0px;
+  #social li {
+    margin-right: 10px;
   }
 }
 
@@ -406,22 +410,5 @@ body .form-control:focus {
 
   #navButtonFooter {
     margin-top: 30px;
-  }
-
-  #scrollUp {
-    bottom: 20px;
-    right: 25px;
-    height: 20px;
-    width: 20px;
-    border: solid #6e07f3;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-  }
-
-  #scrollUp:hover {
-    border-color: #56dbb1;
   }
 }

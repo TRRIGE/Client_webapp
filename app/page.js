@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import DotLoader from "react-spinners/DotLoader";
-import { motion, useAnimation } from 'framer-motion';
+import { color, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -12,7 +12,7 @@ import GetInTouch from "./components/GetInTouch";
 import Footer from "./components/Footer";
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-
+import ScrollToTop from "react-scroll-to-top";
 
 const Page = () => {
 
@@ -55,13 +55,18 @@ const Page = () => {
         </div>
         :
         <>
+          <ScrollToTop smooth color="#6e07f3" />
           <Navbar />
           <Hero />
           <About />
           <Skills />
-          <Experience />
+          <div className="container">
+            <Experience />
+          </div>
           <Work />
-          <GetInTouch />
+          <div className="container">
+            <GetInTouch />
+          </div>
           <Footer />
         </>
       }

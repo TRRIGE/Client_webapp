@@ -60,61 +60,59 @@ const Footer = () => {
               one day at a time.
             </h4>
             <div className="mb-5 mt-5">
-              <div className="center">
+              <div>
                 <div id="social">
-                  <ul>
-                    <li className="linkedin me-3">
-                      <a
-                        href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
-                        target="_blank"
-                      >
-                        <button className="borderlinkedin">
-                          <i className="bi bi-linkedin"></i>
-                        </button>
-                      </a>
-                    </li>
+                  <li className="linkedin">
+                    <a
+                      href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
+                      target="_blank"
+                    >
+                      <button className="borderlinkedin">
+                        <i className="bi bi-linkedin"></i>
+                      </button>
+                    </a>
+                  </li>
 
-                    <li className="github me-3">
-                      <a href="https://github.com/rutuuujaa" target="_blank">
-                        <button className="bordergithub">
-                          <i className="bi bi-github"></i>
-                        </button>
-                      </a>
-                    </li>
+                  <li className="github">
+                    <a href="https://github.com/rutuuujaa" target="_blank">
+                      <button className="bordergithub">
+                        <i className="bi bi-github"></i>
+                      </button>
+                    </a>
+                  </li>
 
-                    <li className="twitter me-3">
-                      <a
-                        href="https://twitter.com/kothekar_rutuja"
-                        target="_blank"
-                      >
-                        <button className="borderTwitter">
-                          <i className="bi bi-twitter"></i>
-                        </button>
-                      </a>
-                    </li>
+                  <li className="twitter">
+                    <a
+                      href="https://twitter.com/kothekar_rutuja"
+                      target="_blank"
+                    >
+                      <button className="borderTwitter">
+                        <i className="bi bi-twitter"></i>
+                      </button>
+                    </a>
+                  </li>
 
-                    <li className="instagram me-3">
-                      <a
-                        href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
-                        target="_blank"
-                      >
-                        <button className="borderInsta">
-                          <i className="bi bi-instagram"></i>
-                        </button>
-                      </a>
-                    </li>
+                  <li className="instagram">
+                    <a
+                      href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
+                      target="_blank"
+                    >
+                      <button className="borderInsta">
+                        <i className="bi bi-instagram"></i>
+                      </button>
+                    </a>
+                  </li>
 
-                    <li className="dribbble me-3">
-                      <a
-                        href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
-                        target="_blank"
-                      >
-                        <button className="borderDribble">
-                          <i className="bi bi-dribbble"></i>
-                        </button>
-                      </a>
-                    </li>
-                  </ul>
+                  <li className="dribbble me-0">
+                    <a
+                      href="https://www.linkedin.com/in/rutuja-kothekar-b98498273/"
+                      target="_blank"
+                    >
+                      <button className="borderDribble">
+                        <i className="bi bi-dribbble"></i>
+                      </button>
+                    </a>
+                  </li>
                 </div>
               </div>
             </div>

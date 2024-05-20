@@ -44,13 +44,7 @@ const Work = () => {
           transition={{ duration: 0.9 }}
           className="row ms-3 me-3"
         >
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 50 }}
-            animate={controls}
-            transition={{ duration: 0.9 }}
-            className="col-lg-4"
-          >
+          <div className="col-lg-4">
             <div className="card p-4 text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">Stocklook</h2>
@@ -71,14 +65,8 @@ const Work = () => {
                 </a>
               </div>
             </div>
-          </motion.div>
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 50 }}
-            animate={controls}
-            transition={{ duration: 0.9 }}
-            className="col-lg-4"
-          >
+          </div>
+          <div className="col-lg-4">
             <div className="card p-4 text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">HealthChat</h2>
@@ -99,14 +87,8 @@ const Work = () => {
                 </a>
               </div>
             </div>
-          </motion.div>
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 50 }}
-            animate={controls}
-            transition={{ duration: 0.9 }}
-            className="col-lg-4"
-          >
+          </div>
+          <div className="col-lg-4">
             <div className="card p-4 text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">TodoList</h2>
@@ -128,7 +110,7 @@ const Work = () => {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </div>

@@ -69,13 +69,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-        <div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.9 }}
-          className="col-lg-6"
-        >
+        <div className="col-lg-6">
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
