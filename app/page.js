@@ -44,7 +44,7 @@ const Page = () => {
             color={"#6e07f3"}
             loading={loading}
             className='mb-5'
-            size={60}
+            size={25}
           />
           <motion.div
             // initial={{ opacity: 0, y: -50 }}
