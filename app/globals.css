@@ -186,6 +186,7 @@ body {
 #workCard {
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
+  padding: 22px;
 }
 
 #workCard:hover .card-title {
@@ -201,7 +202,7 @@ body {
 .projectSkills {
   font-family: "Oxygen", monospace;
   word-spacing: 15px;
-  font-size: 12px;
+  font-size: 12.5px;
   margin-top: 50px;
 }
 

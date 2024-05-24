@@ -44,15 +44,15 @@ const Work = () => {
           transition={{ duration: 0.9 }}
           className="row ms-3 me-3"
         >
-          <div className="col-lg-4">
-            <div className="card p-4 text-center" id="workCard">
+          <div className="col-lg-4 mt-3">
+            <div className="card text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">Stocklook</h2>
                 <p className="card-text">
                   Build a thorough Stock Management System, ensuring streamlined
                   tracking and organization of inventory data.
                 </p>
-                <p className="mt-5 mb-4 small projectSkills">
+                <p className="mt-5 mb-4 projectSkills">
                   React Bootstrap CSS MongoDb
                 </p>
                 <a
@@ -67,14 +67,14 @@ const Work = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="card p-4 text-center" id="workCard">
+            <div className="card text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">HealthChat</h2>
                 <p className="card-text">
                   The Health Care Chat Bot Project, powered by artificial
                   intelligence, seeks to elevate healthcare accessibility.
                 </p>
-                <p className="mt-5 mb-4 small projectSkills">
+                <p className="mt-5 mb-4 projectSkills">
                   Python JavaScript Flask CSS
                 </p>
                 <a
@@ -88,15 +88,15 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
-            <div className="card p-4 text-center" id="workCard">
+          <div className="col-lg-4 mt-3">
+            <div className="card text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">TodoList</h2>
                 <p className="card-text">
                   Todolist Web Application, solution designed to streamline and
                   enhance your daily work management.
                 </p>
-                <p className="mt-5 mb-4 small projectSkills">
+                <p className="mt-5 mb-4 projectSkills">
                   React Bootstrap CSS JavaScript
                 </p>
                 <a
