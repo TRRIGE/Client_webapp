@@ -44,7 +44,7 @@ const Work = () => {
           transition={{ duration: 0.9 }}
           className="row ms-3 me-3"
         >
-          <div className="col-lg-4 mt-3">
+          <div className="col-lg-4 mt-lg-3 col-md-6">
             <div className="card text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">Stocklook</h2>
@@ -66,7 +66,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6">
             <div className="card text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">HealthChat</h2>
@@ -88,7 +88,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 mt-3">
+          <div className="col-lg-4 col-md-6 mt-lg-3">
             <div className="card text-center" id="workCard">
               <div className="card-body">
                 <h2 className="card-title mb-3 fw-bold">TodoList</h2>

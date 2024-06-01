@@ -6,7 +6,7 @@ import heroPage from "../../public/heroPage.svg";
 
 const Hero = () => {
   return (
-    <div className="container">
+    <div className="container" id="hero">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

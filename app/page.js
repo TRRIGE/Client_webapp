@@ -43,13 +43,13 @@ const Page = () => {
           <DotLoader
             color={"#6e07f3"}
             loading={loading}
-            className='mb-5'
-            size={25}
+            size={window.innerWidth > 576 ? 55 : 35}
           />
           <motion.div
-            // initial={{ opacity: 0, y: -50 }}
+            // initial={{ opacity: 1, y: -50 }}
             // animate={controls}
             // transition={{ duration: 0.9 }}
+            id="loaderText"
             style={{ color: '#6e07f3', letterSpacing: '3.5px', wordSpacing: '5px' }}
           >Code Develope Vibe</motion.div>
         </div>
