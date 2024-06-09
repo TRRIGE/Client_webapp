@@ -1,6 +1,12 @@
+import { Saira } from "next/font/google";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Navbar = () => {
   return (
@@ -12,7 +18,7 @@ const Navbar = () => {
         viewport={{ once: true }}
         className="container"
       >
-        <a className="navbar-brand" href="/" id="navBrand">
+        <a className={`navbar-brand ${saira.className}`} href="/" id="navBrand">
           Rutuja Kothekar
         </a>
         <button

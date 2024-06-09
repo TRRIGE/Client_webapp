@@ -1,15 +1,10 @@
-import { Quicksand, Signika } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
 
 export const quicksand = Quicksand({
   subsets: ["latin"],
-  weight: '500',
-});
-
-export const signika = Signika({
-  subsets: ["latin"],
-  weight: '500',
+  weight: '500'
 });
 
 export const metadata = {

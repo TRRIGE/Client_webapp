@@ -1,6 +1,13 @@
+import { Saira } from "next/font/google";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FiGithub } from "react-icons/fi";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Work = () => {
   const controls = useAnimation();
@@ -29,7 +36,9 @@ const Work = () => {
             className="col-lg-6 col-sm-8 col-md-10 mx-auto text-center mb-5 text-white"
             id="marginTop"
           >
-            <h2 id="fontFam">My Recent Work</h2>
+            <h2 id="fontFam" className={saira.className}>
+              My Recent Work
+            </h2>
             <p>
               During my college years and various internships, I explored
               countless digital products. Inspired by the challenge, I began
@@ -47,7 +56,9 @@ const Work = () => {
           <div className="col-lg-4 mt-lg-3 col-md-6">
             <div className="card text-center" id="workCard">
               <div className="card-body">
-                <h2 className="card-title mb-3 fw-bold">Stocklook</h2>
+                <h2 className={`card-title mb-3 fw-bold ${saira.className}`}>
+                  Stocklook
+                </h2>
                 <p className="card-text">
                   Build a thorough Stock Management System, ensuring streamlined
                   tracking and organization of inventory data.
@@ -61,7 +72,7 @@ const Work = () => {
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github me-1 fs-6"></i> GitHub
+                  <FiGithub className="me-1 fs-6" /> GitHub
                 </a>
               </div>
             </div>
@@ -69,7 +80,9 @@ const Work = () => {
           <div className="col-lg-4 col-md-6">
             <div className="card text-center" id="workCard">
               <div className="card-body">
-                <h2 className="card-title mb-3 fw-bold">HealthChat</h2>
+                <h2 className={`card-title mb-3 fw-bold ${saira.className}`}>
+                  HealthChat
+                </h2>
                 <p className="card-text">
                   The Health Care Chat Bot Project, powered by artificial
                   intelligence, seeks to elevate healthcare accessibility.
@@ -83,7 +96,7 @@ const Work = () => {
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github me-1 fs-6"></i> GitHub
+                  <FiGithub className="me-1 fs-6" /> GitHub
                 </a>
               </div>
             </div>
@@ -91,12 +104,14 @@ const Work = () => {
           <div className="col-lg-4 col-md-6 mt-lg-3">
             <div className="card text-center" id="workCard">
               <div className="card-body">
-                <h2 className="card-title mb-3 fw-bold">TodoList</h2>
+                <h2 className={`card-title mb-3 fw-bold ${saira.className}`}>
+                  TodoList
+                </h2>
                 <p className="card-text">
                   Todolist Web Application, solution designed to streamline and
                   enhance your daily work management.
                 </p>
-                <p className="mt-5 mb-4 projectSkills">
+                <p className={`mt-5 mb-4 projectSkills ${saira.className}`}>
                   React Bootstrap CSS JavaScript
                 </p>
                 <a
@@ -105,8 +120,8 @@ const Work = () => {
                   className="link-offset-2 link-underline link-underline-opacity-0"
                   id="projectBtn"
                 >
-                  <i className="bi bi-github me-1 fs-6" id="getInTouch"></i>{" "}
-                  GitHub
+                  <FiGithub className="bi bi-github me-1 fs-6" /> GitHub
+                  <span id="getInTouch"></span>
                 </a>
               </div>
             </div>

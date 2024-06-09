@@ -1,6 +1,13 @@
+import { Saira } from "next/font/google";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { BsChatSquareText } from "react-icons/bs";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const GetInTouch = () => {
   const controls = useAnimation();
@@ -23,7 +30,9 @@ const GetInTouch = () => {
         className="row section text-center"
         id="marginTopOuter"
       >
-        <h2 id="fontFam">What&rsquo;s Next?</h2>
+        <h2 id="fontFam" className={saira.className}>
+          What&rsquo;s Next?
+        </h2>
         <p className="display-5" style={{ color: "#6e07f3", fontWeight: 800 }}>
           Get In Touch
         </p>
@@ -39,7 +48,7 @@ const GetInTouch = () => {
             className="text-decoration-none"
           >
             <button type="button" className="btn mt-3" id="navButtonConnect">
-              <i className="bi bi-menu-up me-2"></i> Let&rsquo;s Connect
+              <BsChatSquareText className="me-2" /> Let&rsquo;s Connect
             </button>
           </a>
         </div>

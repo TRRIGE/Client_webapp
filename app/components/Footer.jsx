@@ -1,7 +1,15 @@
+import { Saira } from "next/font/google";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "500",
+});
 
 const Footer = () => {
   const controls = useAnimation();
@@ -18,17 +26,18 @@ const Footer = () => {
   return (
     <div className="half-height-backgroundforFooter">
       <div className="container-fluid">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.9 }}
-          className="row ms-3 me-3 text-center"
-        >
-          <div className="card" id="footerBlackcontent">
+        <div className="row ms-3 me-3 text-center">
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={controls}
+            transition={{ duration: 0.9 }}
+            className="card"
+            id="footerBlackcontent"
+          >
             <div className="card-body text-white d-lg-flex justify-lg-content-between d-md-flex justify-md-content-between">
               <div className="col-lg-4 col-md-4" id="fontFam">
-                <p>Start a Project</p>
+                <p className={saira.className}>Start a Project</p>
               </div>
               <div className="col-lg-4 col-md-4" id="fontFamFooter">
                 <p>
@@ -39,22 +48,22 @@ const Footer = () => {
               <div className="col-lg-4 col-md-4">
                 <Link href="/contact">
                   <button type="button" className="btn" id="navButtonFooter">
-                    <i className="bi bi-rocket-takeoff me-3"></i>Let&rsquo;s do
-                    This!
+                    Let&rsquo;s do This!
                   </button>
                 </Link>
               </div>
             </div>
-          </div>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.9 }}
-          className="row"
-        >
-          <div className="col text-center text-white" id="footerMargin">
+          </motion.div>
+        </div>
+        <div className="row">
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={controls}
+            transition={{ duration: 0.9 }}
+            className="col text-center text-white"
+            id="footerMargin"
+          >
             <h4>
               Living, learning, & leveling up <br />
               one day at a time.
@@ -68,7 +77,7 @@ const Footer = () => {
                       target="_blank"
                     >
                       <button className="borderlinkedin">
-                        <i className="bi bi-linkedin"></i>
+                        <FiLinkedin className="fs-5" />
                       </button>
                     </a>
                   </li>
@@ -76,7 +85,7 @@ const Footer = () => {
                   <li className="github">
                     <a href="https://github.com/rutuuujaa" target="_blank">
                       <button className="bordergithub">
-                        <i className="bi bi-github"></i>
+                        <FiGithub className="fs-5" />
                       </button>
                     </a>
                   </li>
@@ -87,7 +96,7 @@ const Footer = () => {
                       target="_blank"
                     >
                       <button className="borderTwitter">
-                        <i className="bi bi-twitter"></i>
+                        <FaXTwitter className="fs-5" />
                       </button>
                     </a>
                   </li>
@@ -98,7 +107,7 @@ const Footer = () => {
                       target="_blank"
                     >
                       <button className="borderInsta">
-                        <i className="bi bi-instagram"></i>
+                        <FaInstagram className="fs-5" />
                       </button>
                     </a>
                   </li>
@@ -109,7 +118,7 @@ const Footer = () => {
                       target="_blank"
                     >
                       <button className="borderDribble">
-                        <i className="bi bi-dribbble"></i>
+                        <FaDribbble className="fs-5" />
                       </button>
                     </a>
                   </li>
@@ -120,8 +129,8 @@ const Footer = () => {
               © Copyright {new Date().getFullYear()} - Designed and built by
               Rutuja Kothekar.
             </p>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

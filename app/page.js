@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import DotLoader from "react-spinners/DotLoader";
-import { color, motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -46,9 +46,6 @@ const Page = () => {
             size={window.innerWidth > 576 ? 55 : 35}
           />
           <motion.div
-            // initial={{ opacity: 1, y: -50 }}
-            // animate={controls}
-            // transition={{ duration: 0.9 }}
             id="loaderText"
             style={{ color: '#6e07f3', letterSpacing: '3.5px', wordSpacing: '5px' }}
           >Code Develope Vibe</motion.div>

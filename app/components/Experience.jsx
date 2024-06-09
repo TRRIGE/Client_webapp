@@ -1,6 +1,13 @@
+import { Saira } from "next/font/google";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { HiOutlineExternalLink } from "react-icons/hi";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Experience = () => {
   const controls = useAnimation();
@@ -25,7 +32,9 @@ const Experience = () => {
         id="experience"
       >
         <div className="col-lg-7 mx-auto text-center mb-5" id="marginTop">
-          <h2 id="fontFam">Experience</h2>
+          <h2 id="fontFam" className={saira.className}>
+            Experience
+          </h2>
           <p>
             In my prior employement i emerged with hands-on technical experience
             cultivated through practical applications.
@@ -43,14 +52,16 @@ const Experience = () => {
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
-                <h5 className="card-title mb-2 fw-bold">InnoSewa Pvt. Ltd.</h5>
+                <h5 className={`card-title mb-2 fw-bold ${saira.className}`}>
+                  InnoSewa Pvt. Ltd.
+                </h5>
                 <a
                   href="https://innosewa.com"
                   target="_blank"
                   className="link-offset-2 link-underline link-underline-opacity-0 ms-auto"
                   id="experienceBtn"
                 >
-                  <i className="bi bi-box-arrow-up-right fs-5"></i>
+                  <HiOutlineExternalLink className="fs-4" />
                 </a>
               </div>
               <h6 className="mb-3" style={{ color: "#6e07f3" }}>
@@ -73,7 +84,9 @@ const Experience = () => {
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
-                <h5 className="card-title mb-2 fw-bold">LiveTechSkills</h5>
+                <h5 className={`card-title mb-2 fw-bold ${saira.className}`}>
+                  LiveTechSkills
+                </h5>
                 <h3></h3>
                 <a
                   href="https://www.livetechskills.com/"
@@ -82,7 +95,7 @@ const Experience = () => {
                   id="experienceBtn"
                 >
                   {" "}
-                  <i className="bi bi-box-arrow-up-right fs-5"></i>
+                  <HiOutlineExternalLink className="fs-4" />
                 </a>
               </div>
               <h6 className="mb-3" style={{ color: "#6e07f3" }}>

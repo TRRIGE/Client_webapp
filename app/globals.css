@@ -162,7 +162,6 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #141c3a;
-  border-radius: 2px;
 }
 
 #footerMargin {
@@ -200,7 +199,6 @@ body {
 }
 
 .projectSkills {
-  font-family: "Oxygen", monospace;
   word-spacing: 15px;
   font-size: 12.5px;
   margin-top: 50px;
@@ -219,109 +217,30 @@ body {
   margin-right: 20px;
 }
 
-.linkedin .borderlinkedin {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  width: 45px;
-  height: 45px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  transition: all 0.2s ease-in-out;
-}
-
-.linkedin .borderlinkedin:hover {
-  background-color: white;
-  color: #6e07f3;
-}
-
-.bi.bi-linkedin {
-  font-size: 22px;
-}
-
-.github .bordergithub {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  width: 45px;
-  height: 45px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  transition: all 0.2s ease-in-out;
-}
-
-.github .bordergithub:hover {
-  background-color: white;
-  color: #6e07f3;
-}
-
-.bi.bi-github {
-  font-size: 22px;
-}
-
-.twitter .borderTwitter {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  width: 45px;
-  height: 45px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  transition: all 0.2s ease-in-out;
-}
-
-.twitter .borderTwitter:hover {
-  background-color: white;
-  color: #6e07f3;
-}
-
-.bi.bi-twitter {
-  font-size: 22px;
-}
-
-.instagram .borderInsta {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  width: 45px;
-  height: 45px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  transition: all 0.2s ease-in-out;
-}
-
-.instagram .borderInsta:hover {
-  background-color: white;
-  color: #6e07f3;
-}
-
-.bi.bi-instagram {
-  font-size: 22px;
-}
-
+.linkedin .borderlinkedin,
+.github .bordergithub,
+.twitter .borderTwitter,
+.instagram .borderInsta,
 .dribbble .borderDribble {
-  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
   border: 2px solid white;
   color: white;
   width: 45px;
   height: 45px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
   border-radius: 100px;
   transition: all 0.2s ease-in-out;
 }
 
+.linkedin .borderlinkedin:hover,
+.github .bordergithub:hover,
+.twitter .borderTwitter:hover,
+.instagram .borderInsta:hover,
 .dribbble .borderDribble:hover {
   background-color: white;
   color: #6e07f3;
-}
-
-.bi.bi-dribbble {
-  font-size: 22px;
 }
 
 body .form-control:focus {
@@ -332,6 +251,16 @@ body .form-control:focus {
 #loaderText {
   margin-top: 15px;
   font-size: 15px;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #64ffda;
+  z-index: 9999;
 }
 
 @media (max-width: 576px) {
@@ -409,5 +338,9 @@ body .form-control:focus {
 
   #navButtonFooter {
     margin-top: 30px;
+  }
+
+  .progress-bar {
+    display: block;
   }
 }

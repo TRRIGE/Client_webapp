@@ -1,8 +1,14 @@
+import { Saira } from "next/font/google";
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import hero from "../../public/hero.jpg";
 import heroPage from "../../public/heroPage.svg";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "500",
+});
 
 const Hero = () => {
   return (
@@ -15,7 +21,9 @@ const Hero = () => {
         className="row"
       >
         <div className="col text-center" id="heroTopMargin">
-          <p id="heroTitle">Designer, Fullstack Developer & Self-Learner</p>
+          <p id="heroTitle" className={saira.className}>
+            Designer, Fullstack Developer & Self-Learner
+          </p>
           <p className="fs-4">
             I design and code beautifully simple things, and I love what I do.
           </p>

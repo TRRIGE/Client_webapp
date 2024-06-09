@@ -1,5 +1,11 @@
+import { Saira } from "next/font/google";
 import React from "react"
 import Link from "next/link";
+
+export const saira = Saira({
+    subsets: ["latin"],
+    weight: "400",
+});
 
 export default function Layout({ children }) {
     return (
@@ -7,7 +13,7 @@ export default function Layout({ children }) {
             <nav className="navbar navbar-expand-lg bg-white pt-2 sticky-top">
                 <div className="container">
                     <a
-                        className="navbar-brand"
+                        className={`navbar-brand ${saira.className}`}
                         href="/"
                         id="navBrand"
                     >

@@ -1,6 +1,12 @@
+import { Saira } from "next/font/google";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Skills = () => {
   const controls = useAnimation();
@@ -32,12 +38,12 @@ const Skills = () => {
               id="skillsCard"
             >
               <i
-                className="bi bi-layers mb-2"
+                className="bi bi-stack mb-2"
                 style={{ fontSize: "60px", color: "#56dbb1" }}
               ></i>
               <div className="card-body mt-2">
                 <h4
-                  className="card-title mb-3"
+                  className={`card-title mb-3 ${saira.className}`}
                   id="fontFam"
                   style={{ fontSize: "24px" }}
                 >
@@ -76,7 +82,7 @@ const Skills = () => {
               ></i>
               <div className="card-body mt-2">
                 <h4
-                  className="card-title mb-3"
+                  className={`card-title mb-3 ${saira.className}`}
                   id="fontFam"
                   style={{ fontSize: "24px" }}
                 >
@@ -121,7 +127,7 @@ const Skills = () => {
               ></i>
               <div className="card-body mt-2">
                 <h4
-                  className="card-title mb-3"
+                  className={`card-title mb-3 ${saira.className}`}
                   id="fontFam"
                   style={{ fontSize: "24px" }}
                 >

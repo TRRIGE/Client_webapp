@@ -1,6 +1,12 @@
+import { Saira } from "next/font/google";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const About = () => {
   const controls = useAnimation();
@@ -25,11 +31,14 @@ const About = () => {
           className="row"
           id="about"
         >
-          <div className="col-lg-7 mx-auto text-center" id="marginTop">
-            <h2 className="text-white mb-4 lead" id="fontFam">
+          <div
+            className="col-lg-7 mx-auto text-center text-white"
+            id="marginTop"
+          >
+            <h2 id="fontFam" className={saira.className}>
               Hi, I&rsquo;m Rutuja.<span id="break"></span> Nice to meet you.
             </h2>
-            <p className="text-white">
+            <p className="text-white mt-4">
               Embarking on my journey as a budding freelance designer,
               I&rsquo;ve eagerly embraced remote opportunities, collaborated
               with startups, and worked alongside skilled professionals to craft
@@ -42,7 +51,7 @@ const About = () => {
               target="_blank"
             >
               <button type="button" className="btn mt-3" id="navButtonAbout">
-                <i className="bi bi-briefcase me-2"></i> Hire Me
+                Hire Me
               </button>
             </a>
           </div>

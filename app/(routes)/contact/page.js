@@ -1,13 +1,17 @@
 'use client'
 
+import { Saira } from "next/font/google";
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import PropagateLoader from "react-spinners/PropagateLoader"
 import Image from "next/image";
 import hero from "../../../public/hero.jpg";
 import emailjs from '@emailjs/browser';
 
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Page = () => {
 
@@ -27,7 +31,6 @@ const Page = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-
     var success = document.getElementById("success");
     e.preventDefault();
     setIsPending(true);
@@ -36,17 +39,17 @@ const Page = () => {
         e.target.reset();
         success.style.display = "block";
         setIsPending(false);
+        checkForm();
       }, (error) => {
         console.log(error);
       });
 
     setTimeout(() => {
       success.style.display = "none";
-    }, 7000)
-
+    }, 7000);
   }
 
-  function checkForm(e) {
+  function checkForm() {
     var nameValue = document.getElementById('form_name').value.trim();
     var lastNameValue = document.getElementById('form_lastName').value.trim();
     var emailValue = document.getElementById('form_email').value.trim();
@@ -63,6 +66,15 @@ const Page = () => {
 
   return (
     <div className="container">
+      {isPending && (
+        <motion.div
+          className="progress-bar"
+          initial={{ width: 0 }}
+          animate={{ width: '100%' }}
+          transition={{ duration: 2, ease: "easeInOut" }}
+        />
+      )}
+
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -78,23 +90,26 @@ const Page = () => {
             style={{ borderRadius: "100%" }}
           />
         </div>
-        <h1 className="text-center mt-3 mb-5">Thanks for taking the time to reach out.<br /> How can I help you today?</h1>
+        <h1 className={`text-center mt-3 mb-5 ${saira.className}`}>Thanks for taking the time to reach out.<br /> How can I help you today?</h1>
         <div className="col-lg-8 mx-auto mb-5">
           <form ref={form} onSubmit={sendEmail}>
             <div className="row">
               <div className="col">
-                <div data-mdb-input-init className="form-outline mb-4">
+                <div className="form-floating mb-4">
                   <input type="text" name="form_name" id="form_name" className="form-control" placeholder="Name" style={{ height: '50px' }} onInput={checkForm} />
+                  <label htmlFor="form_name">Name</label>
                 </div>
               </div>
               <div className="col">
-                <div data-mdb-input-init className="form-outline mb-4">
+                <div className="form-floating mb-4">
                   <input type="text" name="form_lastName" id="form_lastName" className="form-control" placeholder="Lastname" style={{ height: '50px' }} onInput={checkForm} />
+                  <label htmlFor="form_lastName">Lastname</label>
                 </div>
               </div>
             </div>
-            <div data-mdb-input-init className="form-outline mb-4">
+            <div className="form-floating mb-4">
               <input type="email" name="form_email" id="form_email" className="form-control" placeholder="Email" style={{ height: '50px' }} onInput={checkForm} />
+              <label htmlFor="form_email">Email</label>
             </div>
             <div className="form-floating mb-4">
               <textarea name="message" id="message" className="form-control" placeholder="Leave a comment here" style={{ height: '100px' }} onInput={checkForm}></textarea>
@@ -102,14 +117,10 @@ const Page = () => {
             </div>
             <div className="text-center">
               <button type="submit" id='navButtonConnect' value="Send" className="btn" disabled>
-                <i className="bi bi-send me-2"></i>
                 Send Message
               </button>
             </div>
-            <div className='fw-bold text-center mt-2' id="success">Your message sent succesfully!</div>
-            {isPending && <PropagateLoader
-              className="text-center mt-2" color={"#64ffda"}
-            />}
+            <div className='fw-bold text-center mt-2' id="success">Your message sent successfully!</div>
           </form>
         </div>
       </motion.div>
