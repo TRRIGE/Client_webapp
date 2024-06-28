@@ -22,11 +22,11 @@ const GetInTouch = () => {
   }, [controls, inView]);
   return (
     <div className="container">
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, y: 50 }}
-        animate={controls}
-        transition={{ duration: 0.9 }}
+      <div
+        // ref={ref}
+        // initial={{ opacity: 0, y: 50 }}
+        // animate={controls}
+        // transition={{ duration: 0.9 }}
         className="row section text-center"
         id="marginTopOuter"
       >
@@ -52,7 +52,7 @@ const GetInTouch = () => {
             </button>
           </a>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

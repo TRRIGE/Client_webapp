@@ -27,11 +27,11 @@ const Footer = () => {
     <div className="half-height-backgroundforFooter">
       <div className="container-fluid">
         <div className="row ms-3 me-3 text-center">
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 50 }}
-            animate={controls}
-            transition={{ duration: 0.9 }}
+          <div
+            // ref={ref}
+            // initial={{ opacity: 0, y: 50 }}
+            // animate={controls}
+            // transition={{ duration: 0.9 }}
             className="card"
             id="footerBlackcontent"
           >
@@ -53,14 +53,14 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
         <div className="row">
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 50 }}
-            animate={controls}
-            transition={{ duration: 0.9 }}
+          <div
+            // ref={ref}
+            // initial={{ opacity: 0, y: 50 }}
+            // animate={controls}
+            // transition={{ duration: 0.9 }}
             className="col text-center text-white"
             id="footerMargin"
           >
@@ -129,7 +129,7 @@ const Footer = () => {
               © Copyright {new Date().getFullYear()} - Designed and built by
               Rutuja Kothekar.
             </p>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

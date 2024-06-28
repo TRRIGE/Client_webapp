@@ -23,11 +23,11 @@ const Skills = () => {
   return (
     <div className="half-height-background" id="skills">
       <div className="container-fluid">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.9 }}
+        <div
+          // ref={ref}
+          // initial={{ opacity: 0, y: 50 }}
+          // animate={controls}
+          // transition={{ duration: 0.9 }}
           className="row"
           style={{ marginLeft: "15px", marginRight: "15px" }}
         >
@@ -160,7 +160,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

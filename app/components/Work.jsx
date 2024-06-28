@@ -24,11 +24,11 @@ const Work = () => {
   return (
     <div className="half-height-backgroundforWork" id="marginTopOuter">
       <div className="container-fluid">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.9 }}
+        <div
+          // ref={ref}
+          // initial={{ opacity: 0, y: 50 }}
+          // animate={controls}
+          // transition={{ duration: 0.9 }}
           className="row"
           id="work"
         >
@@ -45,12 +45,12 @@ const Work = () => {
               crafting my own, driven by a passion for innovative design.
             </p>
           </div>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.9 }}
+        </div>
+        <div
+          // ref={ref}
+          // initial={{ opacity: 0, y: 50 }}
+          // animate={controls}
+          // transition={{ duration: 0.9 }}
           className="row ms-3 me-3"
         >
           <div className="col-lg-4 mt-lg-3 col-md-6">
@@ -126,7 +126,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

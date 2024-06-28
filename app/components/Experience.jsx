@@ -23,11 +23,11 @@ const Experience = () => {
 
   return (
     <div className="container">
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, y: 50 }}
-        animate={controls}
-        transition={{ duration: 0.9 }}
+      <div
+        // ref={ref}
+        // initial={{ opacity: 0, y: 50 }}
+        // animate={controls}
+        // transition={{ duration: 0.9 }}
         className="row"
         id="experience"
       >
@@ -40,12 +40,12 @@ const Experience = () => {
             cultivated through practical applications.
           </p>
         </div>
-      </motion.div>
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, y: 50 }}
-        animate={controls}
-        transition={{ duration: 0.9 }}
+      </div>
+      <div
+        // ref={ref}
+        // initial={{ opacity: 0, y: 50 }}
+        // animate={controls}
+        // transition={{ duration: 0.9 }}
         className="row"
       >
         <div className="col-lg-6">
@@ -114,7 +114,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

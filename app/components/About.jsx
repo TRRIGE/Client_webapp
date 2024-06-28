@@ -23,11 +23,11 @@ const About = () => {
   return (
     <div id="aboutBcakground">
       <div className="container">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.9 }}
+        <div
+          // ref={ref}
+          // initial={{ opacity: 0, y: 50 }}
+          // animate={controls}
+          // transition={{ duration: 0.9 }}
           className="row"
           id="about"
         >
@@ -55,7 +55,7 @@ const About = () => {
               </button>
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
