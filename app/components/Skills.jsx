@@ -1,6 +1,5 @@
 import { Saira } from "next/font/google";
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 
 export const saira = Saira({
@@ -9,25 +8,10 @@ export const saira = Saira({
 });
 
 const Skills = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls, inView]);
-
   return (
     <div className="half-height-background" id="skills">
       <div className="container-fluid">
         <div
-          // ref={ref}
-          // initial={{ opacity: 0, y: 50 }}
-          // animate={controls}
-          // transition={{ duration: 0.9 }}
           className="row"
           style={{ marginLeft: "15px", marginRight: "15px" }}
         >

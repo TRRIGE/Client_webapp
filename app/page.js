@@ -1,7 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
-import DotLoader from "react-spinners/DotLoader";
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import About from "./components/About";
@@ -15,7 +14,6 @@ import Navbar from './components/Navbar';
 import ScrollToTop from "react-scroll-to-top";
 
 const Page = () => {
-
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -27,28 +25,35 @@ const Page = () => {
     }
   }, [controls, inView]);
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
+    const timeout = setTimeout(() => {
+      setLoading(false);
     }, 3500);
-  }, [])
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <>
       {loading ?
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: 'white' }}>
-          <DotLoader
-            color={"#6e07f3"}
-            loading={loading}
-            size={window.innerWidth > 576 ? 55 : 35}
-          />
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#a4ecd5' }}>
+          <div className="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
             id="loaderText"
-            style={{ color: '#6e07f3', letterSpacing: '3.5px', wordSpacing: '5px' }}
-          >Code Develope Vibe</motion.div>
+          >
+            Code Develope Vibe
+          </motion.div>
         </div>
         :
         <>
@@ -68,7 +73,7 @@ const Page = () => {
         </>
       }
     </>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

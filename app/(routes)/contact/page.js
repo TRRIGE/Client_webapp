@@ -66,15 +66,6 @@ const Page = () => {
 
   return (
     <div className="container">
-      {isPending && (
-        <motion.div
-          className="progress-bar"
-          initial={{ width: 0 }}
-          animate={{ width: '100%' }}
-          transition={{ duration: 2, ease: "easeInOut" }}
-        />
-      )}
-
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -120,6 +111,9 @@ const Page = () => {
                 Send Message
               </button>
             </div>
+            {isPending && (
+              <div className='fw-bold text-center mt-2' id="pending">Your message is sending...</div>
+            )}
             <div className='fw-bold text-center mt-2' id="success">Your message sent successfully!</div>
           </form>
         </div>

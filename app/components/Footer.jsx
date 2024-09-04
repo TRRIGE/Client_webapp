@@ -1,8 +1,6 @@
 import { Saira } from "next/font/google";
 import Link from "next/link";
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 
@@ -12,29 +10,11 @@ export const saira = Saira({
 });
 
 const Footer = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls, inView]);
-
   return (
     <div className="half-height-backgroundforFooter">
       <div className="container-fluid">
         <div className="row ms-3 me-3 text-center">
-          <div
-            // ref={ref}
-            // initial={{ opacity: 0, y: 50 }}
-            // animate={controls}
-            // transition={{ duration: 0.9 }}
-            className="card"
-            id="footerBlackcontent"
-          >
+          <div className="card" id="footerBlackcontent">
             <div className="card-body text-white d-lg-flex justify-lg-content-between d-md-flex justify-md-content-between">
               <div className="col-lg-4 col-md-4" id="fontFam">
                 <p className={saira.className}>Start a Project</p>
@@ -56,14 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="row">
-          <div
-            // ref={ref}
-            // initial={{ opacity: 0, y: 50 }}
-            // animate={controls}
-            // transition={{ duration: 0.9 }}
-            className="col text-center text-white"
-            id="footerMargin"
-          >
+          <div className="col text-center text-white" id="footerMargin">
             <h4>
               Living, learning, & leveling up <br />
               one day at a time.

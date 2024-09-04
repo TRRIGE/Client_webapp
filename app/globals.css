@@ -182,6 +182,11 @@ body {
   animation: 3s linear;
 }
 
+#pending {
+  color: #6e07f3;
+  animation: 3s linear;
+}
+
 #workCard {
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
@@ -249,8 +254,12 @@ body .form-control:focus {
 }
 
 #loaderText {
-  margin-top: 15px;
+  margin-top: 45px;
   font-size: 15px;
+  color: #6e07f3;
+  letter-spacing: 3.5px;
+  word-spacing: 5px;
+  font-weight: 600;
 }
 
 .progress-bar {
@@ -259,14 +268,14 @@ body .form-control:focus {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #64ffda;
+  background-color: #6e07f3;
   z-index: 9999;
 }
 
 @media (max-width: 576px) {
   #loaderText {
     font-size: 10px;
-    margin-top: 25px;
+    margin-top: 40px;
   }
 
   #heroTitle {
@@ -342,5 +351,62 @@ body .form-control:focus {
 
   .progress-bar {
     display: block;
+  }
+}
+
+.spinner {
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: #6e02fc3a;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #6e07f3;
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
   }
 }

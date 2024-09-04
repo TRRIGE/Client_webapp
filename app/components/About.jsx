@@ -1,7 +1,5 @@
 import { Saira } from "next/font/google";
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 
 export const saira = Saira({
   subsets: ["latin"],
@@ -9,28 +7,10 @@ export const saira = Saira({
 });
 
 const About = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls, inView]);
-
   return (
     <div id="aboutBcakground">
       <div className="container">
-        <div
-          // ref={ref}
-          // initial={{ opacity: 0, y: 50 }}
-          // animate={controls}
-          // transition={{ duration: 0.9 }}
-          className="row"
-          id="about"
-        >
+        <div className="row" id="about">
           <div
             className="col-lg-7 mx-auto text-center text-white"
             id="marginTop"

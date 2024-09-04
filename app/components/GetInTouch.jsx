@@ -1,7 +1,5 @@
 import { Saira } from "next/font/google";
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import { BsChatSquareText } from "react-icons/bs";
 
 export const saira = Saira({
@@ -10,26 +8,9 @@ export const saira = Saira({
 });
 
 const GetInTouch = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls, inView]);
   return (
     <div className="container">
-      <div
-        // ref={ref}
-        // initial={{ opacity: 0, y: 50 }}
-        // animate={controls}
-        // transition={{ duration: 0.9 }}
-        className="row section text-center"
-        id="marginTopOuter"
-      >
+      <div className="row section text-center" id="marginTopOuter">
         <h2 id="fontFam" className={saira.className}>
           What&rsquo;s Next?
         </h2>

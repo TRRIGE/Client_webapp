@@ -1,6 +1,9 @@
+"use client";
+
 import { Saira } from "next/font/google";
-import React from "react"
+import React, { useState } from "react"
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const saira = Saira({
     subsets: ["latin"],
@@ -8,6 +11,7 @@ export const saira = Saira({
 });
 
 export default function Layout({ children }) {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-white pt-2 sticky-top">
@@ -19,7 +23,7 @@ export default function Layout({ children }) {
                     >
                         Rutuja Kothekar
                     </a>
-                    <button
+                    <motion.button
                         className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
@@ -28,9 +32,17 @@ export default function Layout({ children }) {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                         id="navbarToggler"
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: isOpen ? 180 : 0 }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        onClick={() => setIsOpen(!isOpen)}
                     >
-                        <span className="navbar-toggler-icon fs-6"></span>
-                    </button>
+                        <i
+                            className="bi bi-list fs-1"
+                            aria-hidden="true"
+                            style={{ color: isOpen ? "#64ffda" : "#6e07f3" }}
+                        ></i>
+                    </motion.button>
                     <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
                         <Link href="/" className="ms-auto d-grid text-decoration-none">
                             <button type="button" className="btn" id="navButton">

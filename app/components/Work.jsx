@@ -1,7 +1,5 @@
 import { Saira } from "next/font/google";
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import { FiGithub } from "react-icons/fi";
 
 export const saira = Saira({
@@ -10,28 +8,10 @@ export const saira = Saira({
 });
 
 const Work = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls, inView]);
-
   return (
     <div className="half-height-backgroundforWork" id="marginTopOuter">
       <div className="container-fluid">
-        <div
-          // ref={ref}
-          // initial={{ opacity: 0, y: 50 }}
-          // animate={controls}
-          // transition={{ duration: 0.9 }}
-          className="row"
-          id="work"
-        >
+        <div className="row" id="work">
           <div
             className="col-lg-6 col-sm-8 col-md-10 mx-auto text-center mb-5 text-white"
             id="marginTop"
@@ -46,13 +26,7 @@ const Work = () => {
             </p>
           </div>
         </div>
-        <div
-          // ref={ref}
-          // initial={{ opacity: 0, y: 50 }}
-          // animate={controls}
-          // transition={{ duration: 0.9 }}
-          className="row ms-3 me-3"
-        >
+        <div className="row ms-3 me-3">
           <div className="col-lg-4 mt-lg-3 col-md-6">
             <div className="card text-center" id="workCard">
               <div className="card-body">

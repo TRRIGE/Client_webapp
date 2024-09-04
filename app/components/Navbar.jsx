@@ -1,6 +1,6 @@
 import { Saira } from "next/font/google";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export const saira = Saira({
@@ -9,6 +9,7 @@ export const saira = Saira({
 });
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <motion.nav className="navbar navbar-expand-lg bg-white pt-2 sticky-top">
       <motion.div
@@ -18,10 +19,10 @@ const Navbar = () => {
         viewport={{ once: true }}
         className="container"
       >
-        <a className={`navbar-brand ${saira.className}`} href="/" id="navBrand">
+        <a className={`navbar-brand ${saira.className}`} href="#" id="navBrand">
           Rutuja Kothekar
         </a>
-        <button
+        <motion.button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -30,13 +31,19 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
           id="navbarToggler"
+          initial={{ rotate: 0 }}
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          onClick={() => setIsOpen(!isOpen)}
         >
-          <span
-            className="navbar-toggler-icon fs-6"
-            aria-hidden="true"
-            style={{ color: "red" }}
-          ></span>
-        </button>
+          <span role="button">
+            <i
+              className="bi bi-list fs-1"
+              aria-hidden="true"
+              style={{ color: isOpen ? "#64ffda" : "#6e07f3" }}
+            ></i>
+          </span>
+        </motion.button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
             <li className="nav-item">

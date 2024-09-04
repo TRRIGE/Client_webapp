@@ -1,7 +1,5 @@
 import { Saira } from "next/font/google";
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
 export const saira = Saira({
@@ -10,27 +8,9 @@ export const saira = Saira({
 });
 
 const Experience = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls, inView]);
-
   return (
     <div className="container">
-      <div
-        // ref={ref}
-        // initial={{ opacity: 0, y: 50 }}
-        // animate={controls}
-        // transition={{ duration: 0.9 }}
-        className="row"
-        id="experience"
-      >
+      <div className="row" id="experience">
         <div className="col-lg-7 mx-auto text-center mb-5" id="marginTop">
           <h2 id="fontFam" className={saira.className}>
             Experience
@@ -41,22 +21,16 @@ const Experience = () => {
           </p>
         </div>
       </div>
-      <div
-        // ref={ref}
-        // initial={{ opacity: 0, y: 50 }}
-        // animate={controls}
-        // transition={{ duration: 0.9 }}
-        className="row"
-      >
+      <div className="row">
         <div className="col-lg-6">
           <div className="card p-3" id="experienceCard">
             <div className="card-body">
               <div className="d-flex">
                 <h5 className={`card-title mb-2 fw-bold ${saira.className}`}>
-                  InnoSewa Pvt. Ltd.
+                  Vidarbha Infotech Private Limited
                 </h5>
                 <a
-                  href="https://innosewa.com"
+                  href="http://www.vidarbhainfotech.com/"
                   target="_blank"
                   className="link-offset-2 link-underline link-underline-opacity-0 ms-auto"
                   id="experienceBtn"
@@ -65,7 +39,7 @@ const Experience = () => {
                 </a>
               </div>
               <h6 className="mb-3" style={{ color: "#6e07f3" }}>
-                Software and Business Development
+                Associate Software Developer
               </h6>
               <p className="card-text">
                 My primary responsibility entailed meticulously tailoring
